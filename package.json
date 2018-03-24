@@ -1,10 +1,10 @@
 {
-  "name": "major-setup",
+  "name": "MAIV-VERTIGO",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "author": "Jens Van Steen & Rico Borghs",
+  "author": "Nicolas Nuytten & Jurgen Peuteman",
   "license": "MIT",
   "scripts": {
     "development": "NODE_ENV=development webpack-dev-server --open",
