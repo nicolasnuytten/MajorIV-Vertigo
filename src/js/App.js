@@ -25,9 +25,9 @@ const changeImage = () => {
     imageCount = 0;
   }
 
-  console.log(`${oldImageCount} old`);
+  //console.log(`${oldImageCount} old`);
   imageCount ++;
-  console.log(`${imageCount} new`);
+  //console.log(`${imageCount} new`);
   img.src = `${imgPath}${imageCount}.png`;
 
   if (imageCount !== 0) {

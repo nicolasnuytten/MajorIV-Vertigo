@@ -2,13 +2,17 @@
 @import 'vars';
 
 html {
-  background-color: var(--bg-color);
+  background-color: #f6f1e8;
 }
 
 body {
   font-family: marker;
   font-size: 1.6rem;
-  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 *, *:before, *:after { /* stylelint-disable-line */
@@ -21,6 +25,33 @@ header {
 
 h1 {
   font-size: 3rem;
+}
+
+.center {
+  width: 115rem;
+}
+
+.menu {
+  display: flex;
+  position: relative;
+}
+
+.corner-image {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & video {
+    background-color: #f6f1e8;
+    border: 1rem solid black;
+    border-radius: 2rem;
+  }
 }
 
 .markering {
