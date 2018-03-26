@@ -27,6 +27,10 @@ h1 {
   font-size: 3rem;
 }
 
+.hide {
+  display: none;
+}
+
 .center {
   width: 115rem;
 }
@@ -37,7 +41,7 @@ h1 {
 }
 
 .corner-image {
-  position: absolute;
+  position: fixed;
   top: -2rem;
   right: 0;
 }
