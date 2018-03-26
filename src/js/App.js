@@ -13,7 +13,8 @@ const init = () => {
   console.log(`hallo`);
   //ReactDOM.render(<Test />, document.getElementById(`reactcontent`));
   window.addEventListener(`scroll`, scrollFunc);
-  setInterval(changeImage, 1000);
+  const interval = 10000; //miliseconden
+  setInterval(changeImage, interval);
 };
 
 const scrollFunc = () => {
