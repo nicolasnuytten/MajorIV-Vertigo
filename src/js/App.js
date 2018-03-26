@@ -2,8 +2,7 @@ import React from 'react'; // eslint-disable-line
 import ReactDOM from 'react-dom';
 import Test from './Components/Test.jsx';  // eslint-disable-line
 
-const img = document.querySelector(`.image`);
-const imgPath = `assets/img/`;
+const img = document.querySelector(`.intro-image`);
 let imageCount = 0;
 let firstTime = false;
 
@@ -12,14 +11,12 @@ const cornerImage = document.querySelector(`.corner-image`);
 const init = () => {
   console.log(`hello world`);
   console.log(`hallo`);
-  ReactDOM.render(<Test />, document.getElementById(`reactcontent`));
-
+  //ReactDOM.render(<Test />, document.getElementById(`reactcontent`));
   window.addEventListener(`scroll`, scrollFunc);
   setInterval(changeImage, 1000);
 };
 
 const scrollFunc = () => {
-  console.log(window.scrollY);
   const scroll = window.scrollY;
   if (scroll <= 25) {
     cornerImage.src = `/assets/img/corners/corner_1.png`;
@@ -29,13 +26,16 @@ const scrollFunc = () => {
     cornerImage.src = `/assets/img/corners/corner_3.png`;
   } else if (scroll <= 500) {
     cornerImage.src = `/assets/img/corners/corner_4.png`;
+  } else {
+    cornerImage.src = `/assets/img/corners/corner_4.png`;
   }
 
 };
 
 const changeImage = () => {
+  const imgPath = `assets/img/intro/`;
   const oldImageCount = imageCount;
-  if (imageCount >= 3) {
+  if (imageCount >= 5) {
     imageCount = 0;
   }
   //console.log(`${oldImageCount} old`);
