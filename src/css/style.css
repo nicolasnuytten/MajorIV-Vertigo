@@ -246,8 +246,16 @@ main {
 .trademark1-quote-image-container {
 
   & img {
+    width: 100vw;
+    height: auto;
     margin-top: -20rem;
   }
+}
+
+.trademark2-container {
+  position: relative;
+  z-index: -20;
+  overflow: hidden;
 }
 
 .trademark2-header-container {
@@ -300,7 +308,7 @@ main {
   width: 34.5rem;
   height: 37.5rem;
   position: absolute;
-  z-index: -1;
+  z-index: -8;
   left: 7.8rem;
   display: flex;
   justify-content: center;
@@ -315,7 +323,8 @@ main {
 }
 
 .tm2-img1 {
-  z-index: -2;
+  position: relative;
+  z-index: -10;
 }
 
 .tm2-img2 {
@@ -331,7 +340,7 @@ main {
 }
 
 .tm2-imgBGEffect {
-  background-color: grey;
+  background-color: #777;
   transition: background-color .5s;
 
   & img {
@@ -342,4 +351,65 @@ main {
 
 .tm2-articleEffect {
   opacity: .2;
+}
+
+.trademark3-container {
+  position: relative;
+  width: 100%;
+  background-blend-mode: luminosity;
+  background-image: url(/assets/img/bg/WornPattern.jpg);
+  background-repeat: repeat;
+  background-size: 15rem;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  transform: skewY(5deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trademark3-header-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 9.5rem;
+
+  & p {
+    background-image: url(/assets/img/bg/tm3bg.png);
+    background-repeat: no-repeat;
+    background-size: 25rem;
+  }
+
+  & article {
+    width: 52rem;
+  }
+}
+
+.trademark3-content-container {
+  transform: skewY(-5deg);
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-around;
+
+  & .bold {
+    font-weight: 900;
+  }
+
+  & h1 {
+    margin-bottom: 3rem;
+  }
+
+  & p {
+    width: 52rem;
+    margin-bottom: 4rem;
+  }
+
+  & .trademark3-content-image-container {
+    height: 190rem;
+  }
+}
+
+.trademark3-quote-image-container {
+  margin-top: -45rem;
+
 }

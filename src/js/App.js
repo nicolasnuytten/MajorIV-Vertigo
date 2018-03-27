@@ -34,7 +34,7 @@ const setupListeners = () => {
 };
 
 const setupIntroductionTimer = () => {
-  const interval = 10000; //miliseconden
+  const interval = 1000; //miliseconden
   setInterval(changeImage, interval);
 };
 
@@ -43,6 +43,7 @@ const setupReactElements = () => {
 };
 
 const tm2scrollEffect = () => {
+  console.log(window.scrollY);
   const scroll = window.scrollY;
   if (scroll <= 3200) {
     tm2article1.classList.remove(`tm2-articleEffect`);
@@ -73,7 +74,7 @@ const scrollCorner = () => {
   //console.log(window.scrollY);
   if (scroll <= 2800) {
     cornerImage.src = `/assets/img/corners/corner_1.png`;
-  } else if (scroll <= 4000) {
+  } else if (scroll <= 4300) {
     cornerImage.src = `/assets/img/corners/corner_2.png`;
   } else if (scroll <= 5000) {
     cornerImage.src = `/assets/img/corners/corner_3.png`;
