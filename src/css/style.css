@@ -321,9 +321,14 @@ main {
 }
 
 .tm2-img3 {
-  top: 43rem;
+  top: 41rem;
+  background-color: grey;
 }
 
 .tm2-img4 {
-  top: 80rem;
+  top: 80.5rem;
+}
+
+.tm2-imgBGEffect {
+  background-color: grey;
 }
