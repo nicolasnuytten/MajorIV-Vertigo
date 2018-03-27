@@ -74,6 +74,28 @@ main {
   background-color: var(--purple);
 }
 
+.tm-title {
+  font-family: marker;
+  font-size: 5rem;
+}
+
+.tm-subtitle {
+  color: white;
+  font-size: 3.4rem;
+  padding: 3rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -.2rem;
+}
+
+.tm-header-quote {
+  width: 47rem;
+  text-align: center;
+  font-family: marker;
+  font-size: 1.7rem;
+}
+
 .header-menu {
   display: flex;
   position: relative;
@@ -85,7 +107,7 @@ main {
 
 .corner-image {
   position: fixed;
-  top: -2rem;
+  top: -1rem;
   right: 0;
   z-index: 100;
 }
@@ -104,8 +126,8 @@ main {
 
 .introduction, .introducion-container {
   height: 32rem;
-  border-top: 1rem solid black;
-  border-bottom: 1rem solid black;
+  border-top: .7rem solid black;
+  border-bottom: .7rem solid black;
   background-image: url(/assets/img/bg/WornPattern.jpg);
   background-repeat: repeat;
   background-color: #f4e6d3;
@@ -176,15 +198,7 @@ main {
     transform: skewY(-5deg);
   }
 
-  & h1 {
-    font-family: marker;
-    font-size: 5rem;
-  }
-
   & p {
-    color: white;
-    font-size: 3.4rem;
-    padding: 3rem;
     background-image: url(/assets/img/bg/tm1bg.png);
     background-repeat: no-repeat;
     background-size: 25rem;
@@ -195,10 +209,6 @@ main {
 
   & h2 {
     transform: rotate(8deg);
-    width: 47rem;
-    text-align: center;
-    font-family: marker;
-    font-size: 1.7rem;
   }
 }
 
@@ -230,9 +240,31 @@ main {
 }
 
 .trademark1-quote-image-container {
-  box-shadow: var(--box-shadow);
 
   & img {
     margin-top: -20rem;
+  }
+}
+
+.trademark2-header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & .trademark2-header-title-container {
+    transform: skewY(-5deg);
+  }
+
+  & p {
+    background-image: url(/assets/img/bg/tm2bg.png);
+    background-repeat: no-repeat;
+    background-size: 25rem;
+  }
+}
+
+.trademark2-header-quote-container {
+
+  & h2 {
+    transform: rotate(5deg);
   }
 }

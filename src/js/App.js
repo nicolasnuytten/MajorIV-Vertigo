@@ -18,17 +18,18 @@ const init = () => {
 };
 
 const scrollFunc = () => {
+  console.log(window.scrollY);
   const scroll = window.scrollY;
-  if (scroll <= 100) {
+  if (scroll <= 1800) {
     cornerImage.src = `/assets/img/corners/corner_1.png`;
-  } else if (scroll <= 200) {
+  } else if (scroll <= 2400) {
     cornerImage.src = `/assets/img/corners/corner_2.png`;
-  } else if (scroll <= 400) {
+  } else if (scroll <= 2800) {
     cornerImage.src = `/assets/img/corners/corner_3.png`;
-  } else if (scroll <= 500) {
+  } else if (scroll <= 3200) {
     cornerImage.src = `/assets/img/corners/corner_4.png`;
   } else {
-    cornerImage.src = `/assets/img/corners/corner_4.png`;
+    cornerImage.src = ``;
   }
 
 };
