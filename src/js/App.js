@@ -15,11 +15,16 @@ const tm2img1 = document.querySelector(`.tm2-img2`);
 const tm2img2 = document.querySelector(`.tm2-img3`);
 const tm2img3 = document.querySelector(`.tm2-img4`);
 
+const outroText = document.querySelector(`.outro`);
+const outroCups = document.querySelector(`.cups`);
+let outroCount = 1;
+
 
 const init = () => {
   setupLogs();
   setupListeners();
   setupIntroductionTimer();
+  setupOutroTimer();
   setupReactElements();
 };
 
@@ -38,8 +43,24 @@ const setupIntroductionTimer = () => {
   setInterval(changeImage, interval);
 };
 
+const setupOutroTimer = () => {
+  console.log(outroCount);
+  const interval = 100000; //miliseconden
+  setInterval(countOutro, interval);
+};
+
 const setupReactElements = () => {
   //ReactDOM.render(<Test />, document.getElementById(`reactcontent`));
+};
+
+const countOutro = () => {
+  if (outroCount <= 1) {
+    outroCups.innerHTML = `kopje`;
+  } else {
+    outroCups.innerHTML = `kopjes`;
+  }
+  outroText.innerHTML = outroCount;
+  outroCount ++;
 };
 
 const tm2scrollEffect = () => {
