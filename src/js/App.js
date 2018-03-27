@@ -20,16 +20,16 @@ const init = () => {
 const scrollFunc = () => {
   console.log(window.scrollY);
   const scroll = window.scrollY;
-  if (scroll <= 1800) {
+  if (scroll <= 2800) {
     cornerImage.src = `/assets/img/corners/corner_1.png`;
-  } else if (scroll <= 2400) {
+  } else if (scroll <= 4000) {
     cornerImage.src = `/assets/img/corners/corner_2.png`;
-  } else if (scroll <= 2800) {
+  } else if (scroll <= 5000) {
     cornerImage.src = `/assets/img/corners/corner_3.png`;
-  } else if (scroll <= 3200) {
+  } else if (scroll <= 6000) {
     cornerImage.src = `/assets/img/corners/corner_4.png`;
   } else {
-    cornerImage.src = ``;
+    cornerImage.src = `/assets/img/corners/corner_4.png`;
   }
 
 };
