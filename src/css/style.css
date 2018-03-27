@@ -53,6 +53,27 @@ main {
   margin-bottom: 4rem;
 }
 
+.markering {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.purple {
+  background-color: var(--purple);
+}
+
 .header-menu {
   display: flex;
   position: relative;
@@ -88,6 +109,7 @@ main {
   background-image: url(/assets/img/bg/WornPattern.jpg);
   background-repeat: repeat;
   background-color: #f4e6d3;
+  box-shadow: var(--box-shadow);
 }
 
 .introduction {
@@ -130,7 +152,7 @@ main {
   }
 }
 
-.markering {
+.markering-intro {
   font-weight: bolder;
   font-style: italic;
   background-color: #f2ca4c;
@@ -138,6 +160,10 @@ main {
 
 .trademark1-container {
   margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .trademark1-header-container {
@@ -173,7 +199,6 @@ main {
     text-align: center;
     font-family: marker;
     font-size: 1.7rem;
-
   }
 }
 
@@ -193,5 +218,21 @@ main {
 
   & .trademark1-article1-container, .trademark1-article2-container {
     width: 55rem;
+  }
+
+  & .trademark1-article1-container {
+
+    & img {
+      margin-top: 2rem;
+      margin-left: -7rem;
+    }
+  }
+}
+
+.trademark1-quote-image-container {
+  box-shadow: var(--box-shadow);
+
+  & img {
+    margin-top: -20rem;
   }
 }

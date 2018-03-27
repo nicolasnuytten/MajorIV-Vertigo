@@ -45,9 +45,9 @@ const changeImage = () => {
   img.src = `${imgPath}${imageCount}.png`;
 
   if (imageCount !== 0) {
-    document.querySelector(`.markering${imageCount}`).classList.add(`markering`);
+    document.querySelector(`.markering${imageCount}`).classList.add(`markering-intro`);
     if (firstTime) {
-      document.querySelector(`.markering${oldImageCount}`).classList.remove(`markering`);
+      document.querySelector(`.markering${oldImageCount}`).classList.remove(`markering-intro`);
     }
   }
   firstTime = true;
