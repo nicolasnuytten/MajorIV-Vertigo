@@ -305,8 +305,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color .5s;
 
   & img {
+    transition: filter .5s;
     width: 31.4rem;
     height: 31.4rem;
   }
@@ -322,7 +324,6 @@ main {
 
 .tm2-img3 {
   top: 41rem;
-  background-color: grey;
 }
 
 .tm2-img4 {
@@ -331,4 +332,14 @@ main {
 
 .tm2-imgBGEffect {
   background-color: grey;
+  transition: background-color .5s;
+
+  & img {
+    transition: filter .5s;
+    filter: blur(.5rem) grayscale(50%);
+  }
+}
+
+.tm2-articleEffect {
+  opacity: .2;
 }
