@@ -252,12 +252,6 @@ main {
   }
 }
 
-.trademark2-container {
-  position: relative;
-  z-index: -20;
-  overflow: hidden;
-}
-
 .trademark2-header-container {
   display: flex;
   justify-content: space-around;
@@ -356,6 +350,7 @@ main {
 .trademark3-container {
   position: relative;
   width: 100%;
+
   background-blend-mode: luminosity;
   background-image: url(/assets/img/bg/WornPattern.jpg);
   background-repeat: repeat;
@@ -406,10 +401,47 @@ main {
 
   & .trademark3-content-image-container {
     height: 190rem;
+
   }
 }
 
 .trademark3-quote-image-container {
   margin-top: -45rem;
+  z-index: 30;
+}
 
+.trademark4-header-container {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+
+  & .trademark4-header-title-container {
+    transform: skewY(5deg);
+  }
+
+  & p {
+    background-image: url(/assets/img/bg/tm4bg.png);
+    background-repeat: no-repeat;
+    background-size: 29rem;
+  }
+
+  & h2 {
+    transform: rotate(-3deg);
+  }
+}
+
+.trademark4-content-container {
+  margin-top: 8rem;
+}
+
+.tm4-article1 {
+
+  & h1 {
+    margin-bottom: 3rem;
+  }
+
+  & p {
+    width: 52rem;
+  }
 }
