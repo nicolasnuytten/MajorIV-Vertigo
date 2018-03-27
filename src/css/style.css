@@ -44,8 +44,13 @@ main {
 }
 
 .paragraph {
-  line-height: 2.2rem;
+  line-height: 2.8rem;
   font-size: 1.6rem;
+  color: #2c2c2c;
+}
+
+.break {
+  margin-bottom: 4rem;
 }
 
 .header-menu {
@@ -61,6 +66,7 @@ main {
   position: fixed;
   top: -2rem;
   right: 0;
+  z-index: 100;
 }
 
 .header-video-container {
@@ -75,38 +81,36 @@ main {
   }
 }
 
+.introduction, .introducion-container {
+  height: 32rem;
+  border-top: 1rem solid black;
+  border-bottom: 1rem solid black;
+  background-image: url(/assets/img/bg/WornPattern.jpg);
+  background-repeat: repeat;
+  background-color: #f4e6d3;
+}
+
 .introduction {
   margin-top: 20rem;
-  background-color: #f4e6d3;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 37rem;
-  border-top: 1rem solid black;
-  border-bottom: 1rem solid black;
   transform: skewY(-2deg);
-  background-image: url(/assets/img/bg/WornPattern.jpg);
-  background-repeat: repeat;
+
 }
 
 .introduction-container {
-  background-image: url(/assets/img/bg/WornPattern.jpg);
-  background-repeat: repeat;
-  background-color: #f4e6d3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 37rem;
-  border-top: 1rem solid black;
-  border-bottom: 1rem solid black;
 }
 
 .introduction-text-container {
   width: 62rem;
 
   & h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: -.3rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
@@ -114,15 +118,15 @@ main {
 
   & p {
     width: 61rem;
-    font-size: 1.7rem;
-    line-height: 2.5rem;
+    font-size: 1.9rem;
+    line-height: 2.7rem;
   }
 }
 
 .introduction-image-container {
 
   & img {
-    margin-top: -20rem;
+    margin-top: -15rem;
   }
 }
 
@@ -130,4 +134,64 @@ main {
   font-weight: bolder;
   font-style: italic;
   background-color: #f2ca4c;
+}
+
+.trademark1-container {
+  margin-top: 10rem;
+}
+
+.trademark1-header-container {
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & .trademark1-header-title-container {
+    transform: skewY(-5deg);
+  }
+
+  & h1 {
+    font-family: marker;
+    font-size: 5rem;
+  }
+
+  & p {
+    color: white;
+    font-size: 3.4rem;
+    padding: 3rem;
+    background-image: url(/assets/img/bg/tm1bg.png);
+    background-repeat: no-repeat;
+    background-size: 25rem;
+  }
+}
+
+.trademark1-header-quote-container {
+
+  & h2 {
+    transform: rotate(8deg);
+    width: 47rem;
+    text-align: center;
+    font-family: marker;
+    font-size: 1.7rem;
+
+  }
+}
+
+.trademark1-articles-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+
+  & h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  & p {
+    width: 52rem;
+  }
+
+  & .trademark1-article1-container, .trademark1-article2-container {
+    width: 55rem;
+  }
 }

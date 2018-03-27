@@ -19,7 +19,7 @@ const init = () => {
 
 const scrollFunc = () => {
   const scroll = window.scrollY;
-  if (scroll <= 25) {
+  if (scroll <= 100) {
     cornerImage.src = `/assets/img/corners/corner_1.png`;
   } else if (scroll <= 200) {
     cornerImage.src = `/assets/img/corners/corner_2.png`;
