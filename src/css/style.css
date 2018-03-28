@@ -401,7 +401,10 @@ main {
   }
 
   & .trademark3-content-image-container {
-    height: 190rem;
+
+    & .fixed-gif {
+      position: fixed;
+    }
   }
 }
 
