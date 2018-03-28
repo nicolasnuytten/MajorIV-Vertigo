@@ -1,5 +1,5 @@
-@import "reset";
-@import "vars";
+@import 'reset';
+@import 'vars';
 
 html {
   background-color: #f6f1e8;
@@ -26,13 +26,6 @@ main {
   width: 100%;
 }
 
-*,
-*:before,
-*:after {
-  /* stylelint-disable-line */
-  box-sizing: inherit;
-}
-
 .hide {
   display: none;
 }
@@ -45,7 +38,7 @@ main {
   font-weight: 900;
   font-style: italic;
   font-size: 3.4rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -.2rem;
 }
 
 .paragraph {
@@ -92,7 +85,7 @@ main {
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
-  letter-spacing: -0.2rem;
+  letter-spacing: -.2rem;
 }
 
 .tm-header-quote {
@@ -137,8 +130,8 @@ main {
 .introduction,
 .introducion-container {
   height: 32rem;
-  border-top: 0.7rem solid black;
-  border-bottom: 0.7rem solid black;
+  border-top: .7rem solid black;
+  border-bottom: .7rem solid black;
   background-image: url(/assets/img/bg/WornPattern.jpg);
   background-blend-mode: luminosity;
   background-repeat: repeat;
@@ -167,7 +160,7 @@ main {
 
   & h1 {
     font-size: 3rem;
-    letter-spacing: -0.3rem;
+    letter-spacing: -.3rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
   }
@@ -180,6 +173,7 @@ main {
 }
 
 .introduction-image-container {
+
   & img {
     margin-top: -15rem;
   }
@@ -217,6 +211,7 @@ main {
 }
 
 .trademark1-header-quote-container {
+
   & h2 {
     transform: rotate(8deg);
   }
@@ -238,6 +233,7 @@ main {
   }
 
   & .trademark1-article1-container {
+
     & img {
       margin-top: 2rem;
       margin-left: -7rem;
@@ -246,6 +242,7 @@ main {
 }
 
 .trademark1-quote-image-container {
+
   & img {
     width: 100vw;
     height: auto;
@@ -270,6 +267,7 @@ main {
 }
 
 .trademark2-header-quote-container {
+
   & h2 {
     transform: rotate(5deg);
   }
@@ -295,6 +293,7 @@ main {
 }
 
 .trademark2-content-articles-container {
+
   & img {
     display: none;
   }
@@ -309,10 +308,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.5s;
+  transition: background-color .5s;
 
   & img {
-    transition: filter 0.5s;
+    transition: filter .5s;
     width: 31.4rem;
     height: 31.4rem;
   }
@@ -337,16 +336,16 @@ main {
 
 .tm2-imgBGEffect {
   background-color: #777;
-  transition: background-color 0.5s;
+  transition: background-color .5s;
 
   & img {
-    transition: filter 0.5s;
-    filter: blur(0.5rem) grayscale(50%);
+    transition: filter .5s;
+    filter: blur(.5rem) grayscale(50%);
   }
 }
 
 .tm2-articleEffect {
-  opacity: 0.2;
+  opacity: .2;
 }
 
 .trademark3-container {
@@ -443,8 +442,18 @@ main {
 }
 
 .tm4-article1 {
+
   & h1 {
     margin-bottom: 3rem;
+  }
+}
+
+.footer-colors {
+  margin-top: 4rem;
+
+  & div {
+    height: 3rem;
+    width: 100vw;
   }
 }
 
@@ -463,9 +472,8 @@ footer {
     }
   }
 
-  & .footer-container-content {
+  & .footer-content-container {
     margin: 0 auto 10rem;
-
     padding: 1rem;
   }
 
@@ -510,6 +518,7 @@ footer {
   }
 
   .introduction-image-container {
+
     & img {
       width: 50vw;
       height: auto;
