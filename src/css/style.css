@@ -49,6 +49,7 @@ main {
   line-height: 2.8rem;
   font-size: 1.6rem;
   color: #2c2c2c;
+  width: 52rem;
 }
 
 .break {
@@ -195,7 +196,7 @@ main {
 .trademark1-header-container {
   margin-bottom: 10rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 
   & .trademark1-header-title-container {
@@ -224,10 +225,6 @@ main {
   & h1 {
     font-size: 3.5rem;
     margin-bottom: 3.5rem;
-  }
-
-  & p {
-    width: 52rem;
   }
 
   & .trademark1-article1-container, .trademark1-article2-container {
@@ -395,7 +392,6 @@ main {
   }
 
   & p {
-    width: 52rem;
     margin-bottom: 4rem;
   }
 
@@ -440,8 +436,106 @@ main {
   & h1 {
     margin-bottom: 3rem;
   }
+}
 
-  & p {
-    width: 52rem;
+footer {
+  margin-bottom: 50rem;
+}
+
+@media only screen and (max-width: 1150px) {
+
+  .center {
+    width: 96rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1.4rem;
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+
+  .center {
+    width: 80vw;
+  }
+
+  .paragraph {
+    width: 90vw;
+  }
+
+  .corner-image {
+    display: none;
+  }
+
+  .header-video-container {
+    width: 80vw;
+    height: auto;
+  }
+
+  .introduction {
+    height: 100%;
+  }
+
+  .introduction-container {
+    flex-direction: column;
+
+    & img {
+      width: 50vw;
+      height: auto;
+    }
+
+    & .introduction-text-container {
+      width: 70vw;
+    }
+
+    & .introduction-paragraph {
+      width: 50vw;
+    }
+  }
+
+  .trademark1-content-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .tm1-nolanFamilyImage {
+    margin: 0;
+    width: 80vw;
+    height: auto;
+  }
+
+  .trademark2-content-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trademark2-content-image-container {
+
+    & img {
+      width: 50vw;
+      height: auto;
+    }
+  }
+
+  .trademark2-content-articles-container {
+    width: 80vw;
+  }
+
+  .trademark3-content-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trademark1-quote-image-container, .trademark3-quote-image-container {
+    display: none;
   }
 }
