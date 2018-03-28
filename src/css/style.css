@@ -125,7 +125,12 @@ main {
     border: 1rem solid #f6f2e7;
     border-radius: 3rem;
   }
+
+  & .header-mobile {
+    display: none;
+  }
 }
+
 
 .introduction, .introducion-container {
   height: 32rem;
@@ -400,6 +405,10 @@ main {
 .trademark3-quote-image-container {
   margin-top: -45rem;
   z-index: 30;
+
+  & img {
+    width: 100%;
+  }
 }
 
 .trademark4-header-container {
@@ -452,6 +461,15 @@ footer {
     font-size: 1.4rem;
     width: 40rem;
   }
+
+  .introduction-image-container {
+
+    & img {
+      width: 50vw;
+      height: auto;
+      margin-left: -50rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -471,6 +489,16 @@ footer {
   .header-video-container {
     width: 80vw;
     height: auto;
+
+    & video {
+      display: none;
+    }
+
+    & .header-mobile {
+      display: block;
+      width: 80vw;
+      height: auto;
+    }
   }
 
   .introduction {
@@ -483,14 +511,16 @@ footer {
     & img {
       width: 50vw;
       height: auto;
+      margin: 0;
     }
 
     & .introduction-text-container {
       width: 70vw;
+      margin-top: 4rem;
     }
 
     & .introduction-paragraph {
-      width: 50vw;
+      width: 80vw;
     }
   }
 
@@ -499,6 +529,17 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 0;
+  }
+
+  .trademark1-article1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      margin-bottom: 3rem;
+    }
   }
 
   .tm1-nolanFamilyImage {
