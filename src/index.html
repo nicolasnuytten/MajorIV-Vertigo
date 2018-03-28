@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <title>Christopher Nolan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
   <script>
 
-  // https://github.com/typekit/webfontloader/blob/master/README.md
-  WebFontConfig = {
-    /*
-    google: {
-      families: ['Roboto']
-    }
-    */
+    // https://github.com/typekit/webfontloader/blob/master/README.md
+    WebFontConfig = {
+      /*
+      google: {
+        families: ['Roboto']
+      }
+      */
 
-    custom: {
-      families: ['marker'],
-      urls: ['assets/fonts/fonts.css']
-    }
-  };
+      custom: {
+        families: ['marker'],
+        urls: ['assets/fonts/fonts.css']
+      }
+    };
 
-  (function(d) {
-    var wf = d.createElement('script'), s = d.scripts[0];
-    wf.async = true;
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
-    s.parentNode.insertBefore(wf, s);
-  })(document);
+    (function (d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.async = true;
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+      s.parentNode.insertBefore(wf, s);
+    })(document);
 
-</script>
+  </script>
 </head>
 
 <body>
   <div>
-    <img  class="hide" src="/assets/img/corners/corner_1.png"  alt="corner image"/>
-    <img  class="hide" src="/assets/img/corners/corner_2.png"  alt="corner image"/>
-    <img  class="hide" src="/assets/img/corners/corner_3.png"  alt="corner image"/>
-    <img  class="hide" src="/assets/img/corners/corner_4.png"  alt="corner image"/>
-    <img  class="corner-image" src="/assets/img/corners/corner_1.png"  alt="corner image"/>
+    <img class="hide" src="/assets/img/corners/corner_1.png" alt="corner image" />
+    <img class="hide" src="/assets/img/corners/corner_2.png" alt="corner image" />
+    <img class="hide" src="/assets/img/corners/corner_3.png" alt="corner image" />
+    <img class="hide" src="/assets/img/corners/corner_4.png" alt="corner image" />
+    <img class="corner-image" src="/assets/img/corners/corner_1.png" alt="corner image" />
   </div>
 
   <header class="center header">
     <div class="header-menu">
-      <img src="/assets/img/logoVertigo.png" width="103" height="76" title="Logo" alt="Vertigo Logo"/>
+      <picture>
+        <source type="image/webp" srcset="/assets/img/logoVertigo.webp" />
+        <img src="/assets/img/logoVertigo.png" width="103" height="76" title="Logo" alt="Vertigo Logo" />
+      </picture>
     </div>
     <div class="header-video-container">
       <video autoplay muted width='100%' src='assets/video/main.mp4' type='video/mp4'></video>
-      <img  class="header-mobile" src="/assets/img/mobilescreen.png"  width="491" height="632" alt="mobileHeader"/>
+      <img class="header-mobile" src="/assets/img/mobilescreen.png" width="491" height="632" alt="mobileHeader" />
     </div>
   </header>
   <main>
@@ -54,10 +58,20 @@
       <article class="introduction-container center">
         <div class="introduction-text-container">
           <h1 class="title introduction-title">Introduction</h1>
-          <p class="paragraph introduction-paragraph">Christopher James Nolan (Londen, 30 juli 1970) is een Innovatieve Engels-Amerikaans filmregisseur en scenarioschrijver, bekend van films als <span class="markering5">The Prestige</span>, <span class="markering3">Inception</span>, <span class="markering4">Interstellar</span>, <span class="markering2">Dunkirk</span> en de succesvolle <span class="markering1">Batman-reboots Batman Begins, The Dark Knight en The Dark Knight Rises</span>. Leer Christopher Nolan via een ander perspectief kennen, wat maakt hem juist uniek en waarom zijn zijn films anders.</p>
+          <p class="paragraph introduction-paragraph">Christopher James Nolan (Londen, 30 juli 1970) is een Innovatieve Engels-Amerikaans filmregisseur en scenarioschrijver,
+            bekend van films als
+            <span class="markering5">The Prestige</span>,
+            <span class="markering3">Inception</span>,
+            <span class="markering4">Interstellar</span>,
+            <span class="markering2">Dunkirk</span> en de succesvolle
+            <span class="markering1">Batman-reboots Batman Begins, The Dark Knight en The Dark Knight Rises</span>. Leer Christopher Nolan via een
+            ander perspectief kennen, wat maakt hem juist uniek en waarom zijn zijn films anders.</p>
         </div>
         <div class="introduction-image-container">
-          <img class="intro-image" src="/assets/img/intro/default.png" width="550" height="550" alt="Chrisopher Nolan"/>
+          <picture>
+            <source class="intro-webp" type="image/webp" srcset="/assets/img/intro/default.webp" />
+            <img class="intro-image" src="/assets/img/intro/default.png" width="550" height="550" alt="Chrisopher Nolan" />
+          </picture>
         </div>
       </article>
     </section>
@@ -71,20 +85,49 @@
       <div class="trademark1-content-container center">
         <article class="trademark1-article1-container">
           <h1 class="title">Het begin van Nolan</h1>
-          <p class="paragraph">Christopher Nolan werd opgevoed door een <span class="markering yellow">Amerikaanse moeder en een Britse vader</span> en zijn familie bracht tijd door in <span class="markering yellow">Chicago en Londen.</span>en heeft beide nationaliteiten. Als kind ging hij naar Haileybury, een kostschool net buiten Londen. Vanaf jonge leeftijd was Nolan geïnteresseerd in het maken van films en zou hij de <span class="markering yellow">Super-8-camera</span> van zijn vader gebruiken om korte films te maken. Hij werd beïnvloed door George Lucas's Star Wars-trilogie en door de meeslepende dystopische films van Ridley Scott. Na zijn studie aan het <span class="markering yellow">University College in Londen</span>, waar hij Engelse literatuur studeerde, begon Nolan bedrijfs- en industriële trainingsvideo's te leiden. Tegelijkertijd werkte hij aan zijn eerste volledige release, Following (1998). De film concentreerde zich op een schrijver die gevaarlijke moeite deed om inspiratie te vinden; het kostte Nolan <span class="markering yellow">14 maanden</span> om te voltooien. Op basis van het succes op het festivalcircuit verhuisden hij en zijn producer naar Hollywood.</p>
-          <img  class="tm1-nolanFamilyImage" src="/assets/img/tm1/tm1.png" width="639" height="532" alt="Nolans Family"/>
+          <p class="paragraph">Christopher Nolan werd opgevoed door een
+            <span class="markering yellow">Amerikaanse moeder en een Britse vader</span> en zijn familie bracht tijd door in
+            <span class="markering yellow">Chicago en Londen.</span>en heeft beide nationaliteiten. Als kind ging hij naar Haileybury, een kostschool net
+            buiten Londen. Vanaf jonge leeftijd was Nolan geïnteresseerd in het maken van films en zou hij de
+            <span class="markering yellow">Super-8-camera</span> van zijn vader gebruiken om korte films te maken. Hij werd beïnvloed door George Lucas's
+            Star Wars-trilogie en door de meeslepende dystopische films van Ridley Scott. Na zijn studie aan het
+            <span class="markering yellow">University College in Londen</span>, waar hij Engelse literatuur studeerde, begon Nolan bedrijfs- en industriële
+            trainingsvideo's te leiden. Tegelijkertijd werkte hij aan zijn eerste volledige release, Following (1998). De
+            film concentreerde zich op een schrijver die gevaarlijke moeite deed om inspiratie te vinden; het kostte Nolan
+            <span class="markering yellow">14 maanden</span> om te voltooien. Op basis van het succes op het festivalcircuit verhuisden hij en zijn producer
+            naar Hollywood.</p>
+          <picture>
+            <source type="image/webp" srcset="/assets/img/tm1/tm1.webp" />
+            <img class="tm1-nolanFamilyImage" src="/assets/img/tm1/tm1.png" width="639" height="532" alt="Nolans Family" />
+          </picture>
         </article>
         <article class="trademark1-article2-container">
           <h1 class="title">Familie</h1>
-          <p class="paragraph break">Nolan is getrouwd in 1997 met <span class="markering yellow">Emma Thomas</span>, die hij ontmoette op het University College in Londen toen hij 19 was. Ze heeft als producer gewerkt voor al zijn films en samen hebben ze het productiebedrijf Syncopy Inc. opgericht. Het echtpaar heeft <span class="markering yellow">vier kinderen</span> (Magnus Nolan, Flora Nolan, Rory Nolan en Oliver Nolan) en woont in Los Angeles.</p>
-          <p class="paragraph break">Hij werkt ook nauw samen met andere familieleden, onder andere zijn <span class="markering yellow">broer Jonathan Nolan</span> waar hij het korte verhaal "Memento Mori" heeft aangepast aan de neo-noir-thriller-film Memento (2000). Samen stelden de broers en zussen samen de mysterieuze thriller-film The Prestige (2006), de superheldenfilms The Dark Knight (2008) en The Dark Knight Rises (2012) en de science fictionfilm Interstellar (2014) op.
-          Toen Jonathan nadacht over de artistieke verschillen tussen hem en zijn broer, merkte J. Nolan op: "Ik heb altijd vermoed dat het iets te maken heeft met het feit dat hij linkshandig is en ik rechtshandig, omdat hij op de een of andere manier in staat is om naar te kijken mijn ideeën en draai ze om op een manier die net iets meer verwrongen en interessant is. Het is <span class="markering yellow">geweldig</span> om met hem op die manier te kunnen werken. "
-          Opvallend is dat <span class="markering yellow">Jonathan Nolan met een Amerikaans accent spreekt</span>. Zijn broer Christopher Nolan spreekt met een Brits accent</p>
-          <p class="paragraph">Ook werkt hij <span class="markering yellow">Christopher Nolan</span> samen met zijn neef John Nolan en nicht Kim Hartman waar ze soms als rol in zijn films spelen.</p>
+          <p class="paragraph break">Nolan is getrouwd in 1997 met
+            <span class="markering yellow">Emma Thomas</span>, die hij ontmoette op het University College in Londen toen hij 19 was. Ze heeft als producer
+            gewerkt voor al zijn films en samen hebben ze het productiebedrijf Syncopy Inc. opgericht. Het echtpaar heeft
+            <span class="markering yellow">vier kinderen</span> (Magnus Nolan, Flora Nolan, Rory Nolan en Oliver Nolan) en woont in Los Angeles.</p>
+          <p class="paragraph break">Hij werkt ook nauw samen met andere familieleden, onder andere zijn
+            <span class="markering yellow">broer Jonathan Nolan</span> waar hij het korte verhaal "Memento Mori" heeft aangepast aan de neo-noir-thriller-film
+            Memento (2000). Samen stelden de broers en zussen samen de mysterieuze thriller-film The Prestige (2006), de
+            superheldenfilms The Dark Knight (2008) en The Dark Knight Rises (2012) en de science fictionfilm Interstellar
+            (2014) op. Toen Jonathan nadacht over de artistieke verschillen tussen hem en zijn broer, merkte J. Nolan op:
+            "Ik heb altijd vermoed dat het iets te maken heeft met het feit dat hij linkshandig is en ik rechtshandig, omdat
+            hij op de een of andere manier in staat is om naar te kijken mijn ideeën en draai ze om op een manier die net
+            iets meer verwrongen en interessant is. Het is
+            <span class="markering yellow">geweldig</span> om met hem op die manier te kunnen werken. " Opvallend is dat
+            <span class="markering yellow">Jonathan Nolan met een Amerikaans accent spreekt</span>. Zijn broer Christopher Nolan spreekt met een Brits accent</p>
+          <p class="paragraph">Ook werkt hij
+            <span class="markering yellow">Christopher Nolan</span> samen met zijn neef John Nolan en nicht Kim Hartman waar ze soms als rol in zijn films
+            spelen.
+          </p>
         </article>
       </div>
       <div class="trademark1-quote-image-container">
-        <img src="/assets/img/tm1/tm1q1.png" width="1140" height="599" alt="trademark1 quote">
+        <picture>
+          <source type="image/webp" srcset="/assets/img/tm1/tm1q1.webp" />
+          <img src="/assets/img/tm1/tm1q1.png" width="1140" height="599" alt="trademark1 quote">
+        </picture>
       </div>
     </section>
     <section class="trademark2-container">
@@ -94,42 +137,73 @@
           <p class="tm-subtitle">SET REGELS</p>
         </div>
         <div class="trademark2-header-quote-container tm-header-quote">
-          <h2>“Nolan’s best qoute about life and
-          how he achieved it.”</h2>
+          <h2>“Nolan’s best qoute about life and how he achieved it.”</h2>
         </div>
       </div>
       <div class="trademark2-content-container center">
         <div class="trademark2-content-image-container">
-          <img class="tm2-img1" src="/assets/img/tm2/tm2_1.png" width="504" height="1188" alt=""/>
+          <picture>
+            <source type="image/webp" srcset="/assets/img/tm2/tm2_1.webp" />
+            <img class="tm2-img1" src="/assets/img/tm2/tm2_1.png" width="504" height="1188" alt="" />
+          </picture>
           <div class="tm2-img2 tm2-img">
-            <img src="/assets/img/tm2/tm2_2.png" width="514" height="514" alt="geen emails of telefoon"/>
+            <picture>
+              <source type="image/webp" srcset="/assets/img/tm2/tm2_2.webp" />
+              <img src="/assets/img/tm2/tm2_2.png" width="514" height="514" alt="geen emails of telefoon" />
+            </picture>
           </div>
           <div class="tm2-img3 tm2-img">
-            <img  src="/assets/img/tm2/tm2_3.png" width="500" height="500" alt="thee fanaat"/>
+            <picture>
+              <source type="image/webp" srcset="/assets/img/tm2/tm2_3.webp" />
+              <img src="/assets/img/tm2/tm2_3.png" width="500" height="500" alt="thee fanaat" />
+            </picture>
           </div>
           <div class="tm2-img4 tm2-img">
-            <img src="/assets/img/tm2/tm2_4.png" width="500" height="500" alt="stoeltje op set"/>
+            <picture>
+              <source type="image/webp" srcset="/assets/img/tm2/tm2_4.webp" />
+              <img src="/assets/img/tm2/tm2_4.png" width="500" height="500" alt="stoeltje op set" />
+            </picture>
           </div>
         </div>
         <div class="trademark2-content-articles-container">
           <article class="tm2-article1">
             <h1 class="title">Geen emails of telefoons</h1>
-            <p class="paragraph">“Well, I’ve never use email or phones because I don’t find it would help me with anything I’m doing”. Dit zei Chris over het gebruiken van telefoons en email. Hij vind dat dit hem niet helpt bij het maken van een film en meer tijd geeft om nuttig na te denken. Zijn assistent Andy
-            Thompson beheert al zijn mails en telefoons. Wanneer er een echte belangrijke mail is print hij deze af en geeft hij het door aan Nolan. Wanneer hij dringend moet bereikt worden heeft hij genoeg mensen rond hem die ze kunnen bereiken. </p>
-            <img src="/assets/img/tm2/tm2_2.png" width="514" height="514" alt="geen emails of telefoon"/>
+            <p class="paragraph">“Well, I’ve never use email or phones because I don’t find it would help me with anything I’m doing”. Dit zei
+              Chris over het gebruiken van telefoons en email. Hij vind dat dit hem niet helpt bij het maken van een film
+              en meer tijd geeft om nuttig na te denken. Zijn assistent Andy Thompson beheert al zijn mails en telefoons.
+              Wanneer er een echte belangrijke mail is print hij deze af en geeft hij het door aan Nolan. Wanneer hij dringend
+              moet bereikt worden heeft hij genoeg mensen rond hem die ze kunnen bereiken. </p>
+            <picture>
+              <source type="image/webp" srcset="/assets/img/tm2/tm2_2.webp" />
+              <img src="/assets/img/tm2/tm2_2.png" width="514" height="514" alt="geen emails of telefoon" />
+            </picture>
           </article>
 
           <article class="tm2-article2">
             <h1 class="title">Thee fanaat</h1>
-            <p class="paragraph">Christopher Nolan blijkt een echte fanaat van ‘Earl Grey’ thee (zonder melk), hij heeft altijd een klein thermos mee in zijn zak om op set te genieten van zijn gewoonte en is constant van zijn thee aan het drinken, maakt niet uit welke situatie het is." Andy (assistent)  can get me tea on a glacier," Dit is ook de reden waarom zijn tanden wat kastanje bruin zijn. Niet van het roken van sigaretten maar van het drinken van zijn favoriete thee. Nolan drinkt zelfs zoveel thee dat sommige acteurs waar hij samen met werkte dat hij het mixte met alcohol of drugs. "I asked him, 'You’ve not got vodka in there, have you?"</p>
-            <img  src="/assets/img/tm2/tm2_3.png" width="500" height="500" alt="thee fanaat"/>
+            <p class="paragraph">Christopher Nolan blijkt een echte fanaat van ‘Earl Grey’ thee (zonder melk), hij heeft altijd een klein thermos
+              mee in zijn zak om op set te genieten van zijn gewoonte en is constant van zijn thee aan het drinken, maakt
+              niet uit welke situatie het is." Andy (assistent) can get me tea on a glacier," Dit is ook de reden waarom
+              zijn tanden wat kastanje bruin zijn. Niet van het roken van sigaretten maar van het drinken van zijn favoriete
+              thee. Nolan drinkt zelfs zoveel thee dat sommige acteurs waar hij samen met werkte dat hij het mixte met alcohol
+              of drugs. "I asked him, 'You’ve not got vodka in there, have you?"</p>
+            <picture>
+              <source type="image/webp" srcset="/assets/img/tm2/tm2_3.webp" />
+              <img src="/assets/img/tm2/tm2_3.png" width="500" height="500" alt="thee fanaat" />
+            </picture>
           </article>
 
           <article class="tm2-article3">
             <h1 class="title">Geen emails of telefoons</h1>
-            <p class="paragraph">“Well, I’ve never use email or phones because I don’t find it would help me with anything I’m doing”. Dit zei Chris over het gebruiken van telefoons en email. Hij vind dat dit hem niet helpt bij het maken van een film en meer tijd geeft om nuttig na te denken. Zijn assistent Andy
-            Thompson beheert al zijn mails en telefoons. Wanneer er een echte belangrijke mail is print hij deze af en geeft hij het door aan Nolan. Wanneer hij dringend moet bereikt worden heeft hij genoeg mensen rond hem die ze kunnen bereiken. </p>
-            <img src="/assets/img/tm2/tm2_4.png" width="500" height="500" alt="stoeltje op set"/>
+            <p class="paragraph">“Well, I’ve never use email or phones because I don’t find it would help me with anything I’m doing”. Dit zei
+              Chris over het gebruiken van telefoons en email. Hij vind dat dit hem niet helpt bij het maken van een film
+              en meer tijd geeft om nuttig na te denken. Zijn assistent Andy Thompson beheert al zijn mails en telefoons.
+              Wanneer er een echte belangrijke mail is print hij deze af en geeft hij het door aan Nolan. Wanneer hij dringend
+              moet bereikt worden heeft hij genoeg mensen rond hem die ze kunnen bereiken. </p>
+            <picture>
+              <source type="image/webp" srcset="/assets/img/tm2/tm2_4.webp" />
+              <img src="/assets/img/tm2/tm2_4.png" width="500" height="500" alt="stoeltje op set" />
+            </picture>
           </article>
         </div>
       </div>
@@ -141,33 +215,72 @@
           <p class="tm-subtitle">ANTI NOLAN</p>
         </div>
       </div>
-        <div class="trademark3-content-container center">
-          <div class="trademark3-content-colum1-container">
-            <article class="tm3-article1">
-              <h1 class="title">Haat voor Netflix</h1>
-              <p class="paragraph">Christopher Nolan is geen fan van Netflix. Vooral als het gaat om de houding van streaming-gigant tegenover het maken van films. Hij haat het feit dat Netflix er op staat zijn films te streamen terwijl ze tegelijkertijd in de bioscoop verschijnen. Een praktijk die volgens hem onherstelbare schade toebrengt aan bioscopen.
-              Nolan is de voorbestemde legendarische filmregisseur die ons Inception, The Dark Knight en Interstellar heeft gebracht. Alle drie zijn absolute klassiekers. Nolan zou echter geen van die films voor Netflix hebben gemaakt, simpelweg omdat hij het fel met het distributiemodel van het bedrijf eens is.</p>
-            </article>
-            <div class="trademark3-content-image-container">
-              <!-- <img class="fixed-gif" src="/assets/img/tm3/tm3_1.gif" width="600" height="600" alt="gif nolan op set" /> -->
-              <!-- <img class="fixed-gif" src="/assets/img/tm3/tm3_2.gif" width="600" height="600" alt="gif nolan op set" /> -->
-              <img class="fixed-gif" src="/assets/img/tm3/tm3_3.gif" width="600" height="600" alt="gif nolan op set" />
-            </div>
-          </div>
-          <div class="trademark3-content-colum2-container">
-            <article class="tm3-article2">
-              <h1 class="title">Tegen CGI of 3D</h1>
-              <p class="paragraph bold">Nolan geeft toe dat hij CGI in zijn films gebruikt, maar hij gebruikt het om het verhaal te vertellen in plaats van er een grootschalig visueel spektakel van te maken. Hij is van mening dat er een dunne lijn is tussen hoe een film CGI gebruikt en dat hij geen interesse heeft in het maken van de bigbudget-blockbusters. Dit is wat hij te zeggen had:</p>
-              <p class="paragraph">"Het ding met door de computer gegenereerde beelden is dat het een ongelooflijk krachtige tool is voor het maken van betere visuele effecten. Maar ik geloof in een absoluut verschil tussen animatie en fotografie. Hoe geavanceerd je door de computer gegenereerde beelden ook zijn, als het is gemaakt op basis van geen fysieke elementen en je niets hebt gefotografeerd, wordt het een soort animatie. Er zijn meestal twee verschillende doelen in een film met visuele effecten. Een daarvan is om het publiek voor de gek te houden om iets naadloos te zien, en dat is hoe ik het probeer te gebruiken. De andere is om indruk te maken op het publiek met de hoeveelheid geld die wordt besteed aan het schouwspel van het visuele effect, en waar ik niet in geïnteresseerd ben. We proberen onze stuntwerk- en vloereffecten te verbeteren met buitengewone CGI-tools zoals draad- en rigverhuizingen. Als je veel tijd en moeite besteedt aan het afstemmen van je originele filmelementen, kan het soort verbeteringen dat je in de frames kunt aanbrengen, het oog bederven, waardoor de resultaten veel verder gaan dan wat 20 jaar geleden mogelijk was. Het probleem voor mij is als je niet eerst iets schiet met de camera waarop je de opname wilt baseren, het visuele effect zal uitkomen als de film die je maakt een realistische stijl of patina heeft. Ik geef de voorkeur aan films die meer op het echte leven lijken, dus elke CGI moet heel zorgvuldig worden behandeld om daarin te passen. "</p>
-              <p class="paragraph">CGI is vandaag een relevant hulpmiddel in de film en maakt het onmogelijk om op het scherm mogelijk te worden. Maar er komt een tijd dat een productie oververzadigd kan zijn - wat de waarde van de film zelf verlaagt. CGI wordt niet goed ouder - en hoe ouder een CGI-zware film wordt, hoe meer de CGI eruit springt. In feite zegt Nolan dat hij geen films maakt alleen voor de visuele effecten, maar om de verhalen te vertellen en CGI alleen gebruikt wanneer dat nodig is. Dat is een enorme reden waarom zijn films - ongeacht waar het om gaat - in de realiteit zo veel meer gegrond lijken dan andere films.</p>
-              <p class="paragraph bold">Ten slotte sprak Nolan zijn mening over 3D uit. En zoals je je kunt voorstellen, hij is er geen grote fan van:</p>
-              <p class="paragraph">"Warner Bros. zou heel gelukkig zijn geweest, maar ik zei tegen de jongens dat ik wilde dat het stylistisch consistent was met de eerste twee films en we zouden echt het IMAX-ding pushen om een ​​beeld van zeer hoge kwaliteit te creëren. Ik vind stereoscopische beeldvorming te kleinschalig en intiem in zijn effect. 3D is een verkeerde benaming. Films zijn 3D. Het hele punt van fotografie is dat het driedimensionaal is. Het ding met stereoscopische beeldvorming biedt elk publiekslid een individueel perspectief. Het is zeer geschikt voor videogames en andere meeslepende technologieën, maar als je op zoek bent naar een kijkervaring, is stereoscopisch moeilijk om te nemen. Ik geef de voorkeur aan het grote canvas, kijkend naar een enorm scherm en naar een beeld dat groter aanvoelt dan het leven. Wanneer je dat stereoscopisch behandelt, en we hebben heel wat tests geprobeerd, verkleint je de grootte, zodat het beeld een veel kleiner venster voor je wordt. Dus het effect ervan, en de relatie van het beeld met het publiek, moet zeer zorgvuldig worden overwogen. En ik voel dat in de eerste golf om het te omarmen, dat niet in het minst werd overwogen. "</p>
-            </article>
+      <div class="trademark3-content-container center">
+        <div class="trademark3-content-colum1-container">
+          <article class="tm3-article1">
+            <h1 class="title">Haat voor Netflix</h1>
+            <p class="paragraph">Christopher Nolan is geen fan van Netflix. Vooral als het gaat om de houding van streaming-gigant tegenover het
+              maken van films. Hij haat het feit dat Netflix er op staat zijn films te streamen terwijl ze tegelijkertijd
+              in de bioscoop verschijnen. Een praktijk die volgens hem onherstelbare schade toebrengt aan bioscopen. Nolan
+              is de voorbestemde legendarische filmregisseur die ons Inception, The Dark Knight en Interstellar heeft gebracht.
+              Alle drie zijn absolute klassiekers. Nolan zou echter geen van die films voor Netflix hebben gemaakt, simpelweg
+              omdat hij het fel met het distributiemodel van het bedrijf eens is.</p>
+          </article>
+          <div class="trademark3-content-image-container">
+            <!-- <img class="fixed-gif" src="/assets/img/tm3/tm3_1.gif" width="600" height="600" alt="gif nolan op set" /> -->
+            <!-- <img class="fixed-gif" src="/assets/img/tm3/tm3_2.gif" width="600" height="600" alt="gif nolan op set" /> -->
+            <img class="fixed-gif" src="/assets/img/tm3/tm3_3.gif" width="600" height="600" alt="gif nolan op set" />
           </div>
         </div>
-        <div class="trademark3-quote-image-container">
+        <div class="trademark3-content-colum2-container">
+          <article class="tm3-article2">
+            <h1 class="title">Tegen CGI of 3D</h1>
+            <p class="paragraph bold">Nolan geeft toe dat hij CGI in zijn films gebruikt, maar hij gebruikt het om het verhaal te vertellen in plaats
+              van er een grootschalig visueel spektakel van te maken. Hij is van mening dat er een dunne lijn is tussen hoe
+              een film CGI gebruikt en dat hij geen interesse heeft in het maken van de bigbudget-blockbusters. Dit is wat
+              hij te zeggen had:</p>
+            <p class="paragraph">"Het ding met door de computer gegenereerde beelden is dat het een ongelooflijk krachtige tool is voor het maken
+              van betere visuele effecten. Maar ik geloof in een absoluut verschil tussen animatie en fotografie. Hoe geavanceerd
+              je door de computer gegenereerde beelden ook zijn, als het is gemaakt op basis van geen fysieke elementen en
+              je niets hebt gefotografeerd, wordt het een soort animatie. Er zijn meestal twee verschillende doelen in een
+              film met visuele effecten. Een daarvan is om het publiek voor de gek te houden om iets naadloos te zien, en
+              dat is hoe ik het probeer te gebruiken. De andere is om indruk te maken op het publiek met de hoeveelheid geld
+              die wordt besteed aan het schouwspel van het visuele effect, en waar ik niet in geïnteresseerd ben. We proberen
+              onze stuntwerk- en vloereffecten te verbeteren met buitengewone CGI-tools zoals draad- en rigverhuizingen.
+              Als je veel tijd en moeite besteedt aan het afstemmen van je originele filmelementen, kan het soort verbeteringen
+              dat je in de frames kunt aanbrengen, het oog bederven, waardoor de resultaten veel verder gaan dan wat 20 jaar
+              geleden mogelijk was. Het probleem voor mij is als je niet eerst iets schiet met de camera waarop je de opname
+              wilt baseren, het visuele effect zal uitkomen als de film die je maakt een realistische stijl of patina heeft.
+              Ik geef de voorkeur aan films die meer op het echte leven lijken, dus elke CGI moet heel zorgvuldig worden
+              behandeld om daarin te passen. "</p>
+            <p class="paragraph">CGI is vandaag een relevant hulpmiddel in de film en maakt het onmogelijk om op het scherm mogelijk te worden.
+              Maar er komt een tijd dat een productie oververzadigd kan zijn - wat de waarde van de film zelf verlaagt. CGI
+              wordt niet goed ouder - en hoe ouder een CGI-zware film wordt, hoe meer de CGI eruit springt. In feite zegt
+              Nolan dat hij geen films maakt alleen voor de visuele effecten, maar om de verhalen te vertellen en CGI alleen
+              gebruikt wanneer dat nodig is. Dat is een enorme reden waarom zijn films - ongeacht waar het om gaat - in de
+              realiteit zo veel meer gegrond lijken dan andere films.</p>
+            <p class="paragraph bold">Ten slotte sprak Nolan zijn mening over 3D uit. En zoals je je kunt voorstellen, hij is er geen grote fan van:</p>
+            <p class="paragraph">"Warner Bros. zou heel gelukkig zijn geweest, maar ik zei tegen de jongens dat ik wilde dat het stylistisch consistent
+              was met de eerste twee films en we zouden echt het IMAX-ding pushen om een ​​beeld van zeer hoge kwaliteit
+              te creëren. Ik vind stereoscopische beeldvorming te kleinschalig en intiem in zijn effect. 3D is een verkeerde
+              benaming. Films zijn 3D. Het hele punt van fotografie is dat het driedimensionaal is. Het ding met stereoscopische
+              beeldvorming biedt elk publiekslid een individueel perspectief. Het is zeer geschikt voor videogames en andere
+              meeslepende technologieën, maar als je op zoek bent naar een kijkervaring, is stereoscopisch moeilijk om te
+              nemen. Ik geef de voorkeur aan het grote canvas, kijkend naar een enorm scherm en naar een beeld dat groter
+              aanvoelt dan het leven. Wanneer je dat stereoscopisch behandelt, en we hebben heel wat tests geprobeerd, verkleint
+              je de grootte, zodat het beeld een veel kleiner venster voor je wordt. Dus het effect ervan, en de relatie
+              van het beeld met het publiek, moet zeer zorgvuldig worden overwogen. En ik voel dat in de eerste golf om het
+              te omarmen, dat niet in het minst werd overwogen. "</p>
+          </article>
+        </div>
+      </div>
+      <div class="trademark3-quote-image-container">
+        <picture>
+          <source type="image/webp" srcset="/assets/img/tm3/tm3q1.webp" />
           <img src="/assets/img/tm3/tm3q1.png" width="1440" height="432" alt="trademark3 quote">
-        </div>
+        </picture>
+
+      </div>
     </section>
     <section class="trademark4-container">
       <div class="trademark4-header-container center">
@@ -176,14 +289,18 @@
           <p class="tm-subtitle">KLEURENBLIND</p>
         </div>
         <div class="trademark4-header-quote-container tm-header-quote">
-          <h2>“Nolan’s best qoute about life and
-          how he achieved it.”</h2>
+          <h2>“Nolan’s best qoute about life and how he achieved it.”</h2>
         </div>
       </div>
       <div class="trademark4-content-container center">
         <article class="tm4-article1">
           <h1 class="title">Nolan’s beperking</h1>
-          <p class="paragraph">Christopher Nolan is rood-groen kleurenblind dit is de meeste voorkomende blindheid en ziet niet altijd het verschil tussen rood en groen. Dit als filmregisseur is niet altijd gemakkelijk, rond de jaren 1990 werkte Nolan met een camera met een lampje dat de duidelijk maakte wanneer de batterij bijna leeg was of opgeladen. Hij kon dit niet merken en had hij vaak problemen met lege batterijen. Chris werd door zijn blindheid niet belemmert en schreef/regisseerde films zoals Dark Knight, Interstellar en Dunkirk. In deze films heeft hij ook een specifieke kleuren die hij steeds weer opnieuw gebruikt.</p>
+          <p class="paragraph">Christopher Nolan is rood-groen kleurenblind dit is de meeste voorkomende blindheid en ziet niet altijd het verschil
+            tussen rood en groen. Dit als filmregisseur is niet altijd gemakkelijk, rond de jaren 1990 werkte Nolan met een
+            camera met een lampje dat de duidelijk maakte wanneer de batterij bijna leeg was of opgeladen. Hij kon dit niet
+            merken en had hij vaak problemen met lege batterijen. Chris werd door zijn blindheid niet belemmert en schreef/regisseerde
+            films zoals Dark Knight, Interstellar en Dunkirk. In deze films heeft hij ook een specifieke kleuren die hij
+            steeds weer opnieuw gebruikt.</p>
         </article>
         <div>
 
@@ -199,10 +316,14 @@
         <span class="cups">kopje</span>
       </span> thee op terwijl je dit aan het lezen was.</p>
     <div class="footer-container-content center">
+      <picture>
+        <source type="image/webp" srcset="/assets/img/logoVertigo.webp" />
         <img src="/assets/img/logoVertigo.png" width="103" height="76" title="Logo" alt="Vertigo Logo" />
-        <p class="text">Heb je nog niet genoeg gelezen na dit artikel of vond je het super interressant? bekijk dan zeker onze website waar gevarieerde artikels met alles over films.</p>
-        <a class="link" href="http://vertigoweb.be/">Lees meer</a>
-      </div>
+      </picture>
+      <p class="text">Heb je nog niet genoeg gelezen na dit artikel of vond je het super interressant? bekijk dan zeker onze website waar
+        gevarieerde artikels met alles over films.</p>
+      <a class="link" href="http://vertigoweb.be/">Lees meer</a>
+    </div>
   </footer>
 
 </body>

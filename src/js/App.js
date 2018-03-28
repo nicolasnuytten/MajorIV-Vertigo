@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Test from './Components/Test.jsx';  // eslint-disable-line
 
 const img = document.querySelector(`.intro-image`);
+const imgWebp = document.querySelector(`.intro-webp`);
 let imageCount = 0;
 let firstTime = false;
 
@@ -134,6 +135,7 @@ const changeImage = () => {
   imageCount ++;
   //console.log(`${imageCount} new`);
   img.src = `${imgPath}${imageCount}.png`;
+  imgWebp.srcset = `${imgPath}${imageCount}.webp`;
 
   if (imageCount !== 0) {
     document.querySelector(`.markering${imageCount}`).classList.add(`markering-intro`);
