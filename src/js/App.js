@@ -27,6 +27,10 @@ const init = () => {
   setupIntroductionTimer();
   setupOutroTimer();
   setupReactElements();
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 1150) {
+    cornerImage.classList.add(`hide`);
+  }
+
 };
 
 const setupLogs = () => {

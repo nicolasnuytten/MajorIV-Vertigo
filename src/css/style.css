@@ -289,10 +289,6 @@ main {
     position: relative;
     width: 52rem;
   }
-
-  & .trademark2-content-articles-container {
-    width: 52rem;
-  }
 }
 
 .tm2-img {
@@ -519,6 +515,8 @@ footer {
 
   .trademark2-content-image-container {
 
+    display: none;
+
     & img {
       width: 50vw;
       height: auto;
@@ -526,6 +524,10 @@ footer {
   }
 
   .trademark2-content-articles-container {
+    width: inherit;
+  }
+
+  .tm2-article1, .tm2article2, .tm2article3 {
     width: 80vw;
   }
 
