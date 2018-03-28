@@ -1,5 +1,5 @@
-@import 'reset';
-@import 'vars';
+@import "reset";
+@import "vars";
 
 html {
   background-color: #f6f1e8;
@@ -26,7 +26,10 @@ main {
   width: 100%;
 }
 
-*, *:before, *:after { /* stylelint-disable-line */
+*,
+*:before,
+*:after {
+  /* stylelint-disable-line */
   box-sizing: inherit;
 }
 
@@ -42,7 +45,7 @@ main {
   font-weight: 900;
   font-style: italic;
   font-size: 3.4rem;
-  letter-spacing: -.2rem;
+  letter-spacing: -0.2rem;
 }
 
 .paragraph {
@@ -89,7 +92,7 @@ main {
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
-  letter-spacing: -.2rem;
+  letter-spacing: -0.2rem;
 }
 
 .tm-header-quote {
@@ -131,11 +134,11 @@ main {
   }
 }
 
-
-.introduction, .introducion-container {
+.introduction,
+.introducion-container {
   height: 32rem;
-  border-top: .7rem solid black;
-  border-bottom: .7rem solid black;
+  border-top: 0.7rem solid black;
+  border-bottom: 0.7rem solid black;
   background-image: url(/assets/img/bg/WornPattern.jpg);
   background-blend-mode: luminosity;
   background-repeat: repeat;
@@ -151,7 +154,6 @@ main {
   justify-content: center;
   align-items: center;
   transform: skewY(-2deg);
-
 }
 
 .introduction-container {
@@ -165,7 +167,7 @@ main {
 
   & h1 {
     font-size: 3rem;
-    letter-spacing: -.3rem;
+    letter-spacing: -0.3rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
   }
@@ -178,7 +180,6 @@ main {
 }
 
 .introduction-image-container {
-
   & img {
     margin-top: -15rem;
   }
@@ -216,7 +217,6 @@ main {
 }
 
 .trademark1-header-quote-container {
-
   & h2 {
     transform: rotate(8deg);
   }
@@ -232,12 +232,12 @@ main {
     margin-bottom: 3.5rem;
   }
 
-  & .trademark1-article1-container, .trademark1-article2-container {
+  & .trademark1-article1-container,
+  .trademark1-article2-container {
     width: 55rem;
   }
 
   & .trademark1-article1-container {
-
     & img {
       margin-top: 2rem;
       margin-left: -7rem;
@@ -246,7 +246,6 @@ main {
 }
 
 .trademark1-quote-image-container {
-
   & img {
     width: 100vw;
     height: auto;
@@ -271,7 +270,6 @@ main {
 }
 
 .trademark2-header-quote-container {
-
   & h2 {
     transform: rotate(5deg);
   }
@@ -297,7 +295,6 @@ main {
 }
 
 .trademark2-content-articles-container {
-
   & img {
     display: none;
   }
@@ -312,10 +309,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 
   & img {
-    transition: filter .5s;
+    transition: filter 0.5s;
     width: 31.4rem;
     height: 31.4rem;
   }
@@ -340,16 +337,16 @@ main {
 
 .tm2-imgBGEffect {
   background-color: #777;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 
   & img {
-    transition: filter .5s;
-    filter: blur(.5rem) grayscale(50%);
+    transition: filter 0.5s;
+    filter: blur(0.5rem) grayscale(50%);
   }
 }
 
 .tm2-articleEffect {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .trademark3-container {
@@ -405,12 +402,11 @@ main {
 
   & .trademark3-content-image-container {
     height: 190rem;
-
   }
 }
 
 .trademark3-quote-image-container {
-  margin-top: -45rem;
+  margin-top: -35rem;
   z-index: 30;
 
   & img {
@@ -444,18 +440,58 @@ main {
 }
 
 .tm4-article1 {
-
   & h1 {
     margin-bottom: 3rem;
   }
 }
 
 footer {
-  margin-bottom: 50rem;
+  width: 100vw;
+  background-color: var(--purple);
+
+  & .trivia {
+    font-family: marker;
+    margin: 10rem auto;
+    text-align: center;
+    width: 115rem;
+
+    & span {
+      color: white;
+    }
+  }
+
+  & .footer-container-content {
+    margin: 0 auto 10rem;
+
+    padding: 1rem;
+  }
+
+  & .text {
+    font-family: arial;
+    margin: 2rem 0;
+    width: 40vw;
+    color: white;
+  }
+
+  & a {
+    background-color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -0.2rem;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
 }
 
 @media only screen and (max-width: 1150px) {
-
   .center {
     width: 96rem;
   }
@@ -470,7 +506,6 @@ footer {
   }
 
   .introduction-image-container {
-
     & img {
       width: 50vw;
       height: auto;
@@ -480,7 +515,6 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
-
   .center {
     width: 80vw;
   }
@@ -517,7 +551,7 @@ footer {
     flex-direction: column;
 
     & img {
-      width: 100vw;
+      width: 50vw;
       height: auto;
       margin: 0;
     }
@@ -565,6 +599,7 @@ footer {
 
     & .trademark2-header-quote-container {
       margin-top: 4rem;
+      width: 80vw;
     }
   }
 
@@ -575,7 +610,6 @@ footer {
   }
 
   .trademark2-content-image-container {
-
     display: none;
 
     & img {
@@ -585,7 +619,6 @@ footer {
   }
 
   .trademark2-content-articles-container {
-
     & img {
       display: block;
       width: 40vw;
@@ -594,7 +627,9 @@ footer {
     }
   }
 
-  .tm2-article1, .tm2-article2, .tm2-article3 {
+  .tm2-article1,
+  .tm2-article2,
+  .tm2-article3 {
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -612,7 +647,17 @@ footer {
     justify-content: center;
   }
 
-  .trademark1-quote-image-container, .trademark3-quote-image-container {
+  .trademark1-quote-image-container,
+  .trademark3-quote-image-container {
     display: none;
+  }
+
+  .trademark4-header-container {
+    flex-direction: column;
+
+    & .trademark4-header-quote-container {
+      margin-top: 4rem;
+      width: 80vw;
+    }
   }
 }
