@@ -17,6 +17,8 @@ const outroText = document.querySelector(`.outro`);
 const outroCups = document.querySelector(`.cups`);
 let outroCount = 1;
 
+const tm3gif = document.querySelector(`.trademark3-content-image-container`);
+
 
 const init = () => {
   setupLogs();
@@ -37,6 +39,7 @@ const setupLogs = () => {
 const setupListeners = () => {
   window.addEventListener(`scroll`, scrollCorner);
   window.addEventListener(`scroll`, tm2scrollEffect);
+  window.addEventListener(`scroll`, tm3scrollEffect);
 };
 
 const setupOutroTimer = () => {
@@ -60,6 +63,18 @@ const countOutro = () => {
   outroCount ++;
 };
 
+const tm3scrollEffect = () => {
+  const scroll = window.scrollY;
+  console.log(tm3gif.style.backgroundImage);
+  if (scroll >= 5000 && scroll < 5400) {
+    tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_1.gif)`;
+  } else if (scroll >= 5400 && scroll <= 6000) {
+    tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_2.gif)`;
+  } else if (scroll >= 6000) {
+    tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_3.gif)`;
+  }
+};
+
 const tm2scrollEffect = () => {
   console.log(window.scrollY);
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 960) {
@@ -74,14 +89,14 @@ const tm2scrollEffect = () => {
   } else {
     const scroll = window.scrollY;
     tm2img1.classList.remove(`hide`);
-    if (scroll <= 3200) {
+    if (scroll >= 3000 && scroll < 3300) {
       tm2article1.classList.remove(`tm2-articleEffect`);
       tm2article2.classList.add(`tm2-articleEffect`);
       tm2article3.classList.add(`tm2-articleEffect`);
       tm2img2.classList.remove(`tm2-imgBGEffect`);
       tm2img3.classList.add(`tm2-imgBGEffect`);
       tm2img4.classList.add(`tm2-imgBGEffect`);
-    } else if (scroll <= 3300) {
+    } else if (scroll >= 3300 && scroll < 3500) {
       tm2article1.classList.add(`tm2-articleEffect`);
       tm2article2.classList.remove(`tm2-articleEffect`);
       tm2article3.classList.add(`tm2-articleEffect`);
