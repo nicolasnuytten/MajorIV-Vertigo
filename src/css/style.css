@@ -503,6 +503,47 @@ main {
 
 .trademark4-content-container {
   margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .tm4-image {
+    width: 30vw;
+    border: .5rem solid var(--purple);
+  }
+
+  & .tm4-colorblind {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vw;
+
+    & .tm4-button {
+      background-color: var(--purple);
+      border: none;
+      width: 15rem;
+      margin: 0 auto;
+      padding: 1rem;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: -.2rem;
+      outline: none;
+      cursor: pointer;
+
+      &:active {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+.filter {
+  filter: hue-rotate(50deg);
+  filter: 
 }
 
 .tm4-article1 {
@@ -521,7 +562,7 @@ main {
   }
 
   & .shadow {
-    box-shadow: 0 .3rem 5.9rem 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 .3rem 5.9rem 0 rgba(0, 0, 0, .35);
   }
 }
 
@@ -769,6 +810,28 @@ footer {
       width: 45vw;
       line-height: 1.5;
       margin: 3rem 0;
+    }
+  }
+
+  .trademark4-content-container {
+    display: flex;
+    flex-direction: column;
+
+    & .tm4-colorblind {
+      height: 50vw;
+      margin-top: 2rem;
+    }
+
+    & .tm4-image {
+      width: 70vw;
+    }
+  }
+
+  .buttonContainer {
+    width: 80vw;
+
+    & img {
+      width: 15vw;
     }
   }
 }

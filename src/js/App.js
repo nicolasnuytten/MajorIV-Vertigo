@@ -2,6 +2,7 @@ import React from 'react'; // eslint-disable-line
 import ReactDOM from 'react-dom';
 import Test from './Components/Test.jsx';  // eslint-disable-line
 import Element1 from './Components/Element1.jsx';  // eslint-disable-line
+import Element2 from './Components/Element2.jsx';  // eslint-disable-line
 
 const cornerImage = document.querySelector(`.corner-image`);
 
@@ -48,6 +49,7 @@ const setupOutroTimer = () => {
 const setupReactElements = () => {
   //ReactDOM.render(<Test />, document.getElementById(`reactcontent`));
   ReactDOM.render(<Element1 />, document.getElementById(`reactcontent`));
+  ReactDOM.render(<Element2 />, document.getElementById(`reactcontent2`));
 };
 
 const countOutro = () => {
