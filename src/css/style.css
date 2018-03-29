@@ -404,11 +404,10 @@ main {
 
 .tm2-imgBGEffect {
   background-color: #777;
-  transition: background-color .5s;
 
   & img {
-    transition: filter .5s;
-    filter: blur(.5rem) grayscale(50%);
+    filter: grayscale(50%);
+    opacity: .5;
   }
 }
 
@@ -486,6 +485,10 @@ main {
   }
 }
 
+.tm3-mobile-gif {
+  display: none;
+}
+
 .trademark4-header-container {
   margin-top: 7rem;
   display: flex;
@@ -549,7 +552,6 @@ main {
 
 .filter {
   filter: hue-rotate(50deg);
-  filter: 
 }
 
 .tm4-article1 {
@@ -650,6 +652,20 @@ footer {
     font-size: 1.4rem;
     width: 40rem;
   }
+
+  .introduction-image-container {
+    margin-top: -10rem;
+  }
+
+  .intro-image {
+    width: 30vw;
+    height: auto;
+  }
+
+  .buttonContainer {
+    margin-top: 15rem;
+    width: 25vw;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -709,6 +725,20 @@ footer {
     }
   }
 
+  .introduction-image-container {
+    margin-top: 0;
+  }
+
+  .buttonContainer {
+    margin-top: 0;
+
+    width: 80vw;
+
+    & img {
+      width: 15vw;
+    }
+  }
+
   .trademark1-content-container {
     flex-direction: column;
     align-items: center;
@@ -722,8 +752,21 @@ footer {
     align-items: center;
     justify-content: center;
 
+    & picture {
+      margin-left: 7rem;
+    }
+
     & img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 3rem;
+    }
+
+    & source {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -791,6 +834,23 @@ footer {
     justify-content: center;
   }
 
+  .trademark3-content-image-container {
+    display: none;
+  }
+
+  .tm3-mobile-gif {
+    display: block;
+    width: 80vw;
+    height: auto;
+
+    & img {
+      width: inherit;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 3rem;
+    }
+  }
+
   .trademark1-quote-image-container,
   .trademark3-quote-image-container {
     display: none;
@@ -802,6 +862,21 @@ footer {
     & .trademark4-header-quote-container {
       margin-top: 4rem;
       width: 80vw;
+    }
+  }
+
+  .trademark4-content-container {
+    display: flex;
+    flex-direction: column;
+
+    & .tm4-colorblind {
+      height: 100%;
+      margin-top: 2rem;
+    }
+
+    & .tm4-image {
+      width: 70vw;
+      margin-bottom: 2rem;
     }
   }
 
@@ -819,25 +894,14 @@ footer {
     }
   }
 
-  .trademark4-content-container {
+  .footer-content-container, .footer-content {
     display: flex;
-    flex-direction: column;
-
-    & .tm4-colorblind {
-      height: 50vw;
-      margin-top: 2rem;
-    }
-
-    & .tm4-image {
-      width: 70vw;
-    }
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
   }
 
-  .buttonContainer {
-    width: 80vw;
-
-    & img {
-      width: 15vw;
-    }
+  .footer-image {
+    display: none;
   }
 }
