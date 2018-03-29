@@ -112,14 +112,19 @@ main {
 }
 
 .header-video-container {
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: auto;
 
   & video {
+    width: inherit;
     background-color: #f6f1e8;
-    border: 1rem solid #f6f2e7;
-    border-radius: 3rem;
+    /* border-radius: 3rem; */
+    mix-blend-mode: multiply;
+    box-shadow: var(--box-shadow);
   }
 
   & .header-mobile {
@@ -408,11 +413,11 @@ main {
 }
 
 .trademark3-quote-image-container {
-  margin-top: -35rem;
   z-index: 30;
 
   & img {
-    width: 100%;
+    width: 100vw;
+    height: auto;
   }
 }
 
@@ -463,9 +468,9 @@ footer {
 
   & .trivia {
     font-family: marker;
-    margin: 10rem auto;
+    margin: 5rem auto;
     text-align: center;
-    width: 115rem;
+    width: 80vw;
 
     & span {
       color: white;
@@ -542,7 +547,7 @@ footer {
   }
 
   .header-video-container {
-    width: 80vw;
+    width: 100vw;
     height: auto;
 
     & video {
@@ -551,8 +556,9 @@ footer {
 
     & .header-mobile {
       display: block;
-      width: 80vw;
+      width: 100vw;
       height: auto;
+      box-shadow: var(--box-shadow);
     }
   }
 
@@ -679,6 +685,11 @@ footer {
   footer {
 
     & .trivia {
+      width: 80vw;
+      line-height: 1.5;
+    }
+
+    & .text {
       width: 80vw;
     }
   }
