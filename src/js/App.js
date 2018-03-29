@@ -1,6 +1,7 @@
 import React from 'react'; // eslint-disable-line
 import ReactDOM from 'react-dom';
 import Test from './Components/Test.jsx';  // eslint-disable-line
+import Element1 from './Components/Element1.jsx';  // eslint-disable-line
 
 const img = document.querySelector(`.intro-image`);
 const imgWebp = document.querySelector(`.intro-webp`);
@@ -57,6 +58,7 @@ const setupOutroTimer = () => {
 
 const setupReactElements = () => {
   //ReactDOM.render(<Test />, document.getElementById(`reactcontent`));
+  ReactDOM.render(<Element1 />, document.getElementById(`reactcontent`));
 };
 
 const countOutro = () => {
