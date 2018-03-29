@@ -27,11 +27,28 @@ const init = () => {
   setupListeners();
   setupOutroTimer();
   setupReactElements();
+  setupMobilePopupBox();
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 1150) {
     cornerImage.classList.add(`hide`);
   }
-
 };
+
+const setupMobilePopupBox = () => {
+  window.addEventListener(`load`, mobilePopup);
+};
+
+const mobilePopup = () => {
+  console.log(`geladen`);
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    const r = confirm(`C. Nolan heeft het echt niet voor telefoons, wil je toch doorgaan op de mobile site?`);
+    if (r === true) {
+      console.log(`ok`);
+    } else {
+      window.location.href = `http://www.landliners.com/`;
+    }
+  }
+};
+
 
 const setupLogs = () => {
   console.log(`hello world`);
