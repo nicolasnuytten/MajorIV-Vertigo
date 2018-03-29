@@ -67,11 +67,12 @@ const countOutro = () => {
 
 const tm3scrollEffect = () => {
   const scroll = window.scrollY;
-  if (scroll >= 5000 && scroll < 5400) {
+  if (scroll >= 4886 && scroll < 5400) {
+    tm3gif.style.display = `block`;
     tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_1.gif)`;
-  } else if (scroll >= 5400 && scroll <= 6000) {
+  } else if (scroll >= 5400 && scroll <= 5800) {
     tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_2.gif)`;
-  } else if (scroll >= 6000) {
+  } else if (scroll > 5800) {
     tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_3.gif)`;
   }
 };
