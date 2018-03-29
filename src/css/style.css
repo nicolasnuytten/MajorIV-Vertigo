@@ -408,11 +408,11 @@ main {
 }
 
 .trademark3-quote-image-container {
-  margin-top: -35rem;
   z-index: 30;
 
   & img {
-    width: 100%;
+    width: 100vw;
+    height: auto;
   }
 }
 
@@ -463,7 +463,7 @@ footer {
 
   & .trivia {
     font-family: marker;
-    margin: 10rem auto;
+    margin: 5rem auto;
     text-align: center;
     width: 115rem;
 
@@ -679,6 +679,11 @@ footer {
   footer {
 
     & .trivia {
+      width: 80vw;
+      line-height: 1.5;
+    }
+
+    & .text {
       width: 80vw;
     }
   }
