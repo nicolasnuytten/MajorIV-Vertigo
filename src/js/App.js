@@ -1,10 +1,8 @@
 import React from 'react'; // eslint-disable-line
 import ReactDOM from 'react-dom';
 import Test from './Components/Test.jsx';  // eslint-disable-line
-
-const img = document.querySelector(`.intro-image`);
-let imageCount = 0;
-let firstTime = false;
+import Element1 from './Components/Element1.jsx';  // eslint-disable-line
+import Element2 from './Components/Element2.jsx';  // eslint-disable-line
 
 const cornerImage = document.querySelector(`.corner-image`);
 
@@ -20,11 +18,12 @@ const outroText = document.querySelector(`.outro`);
 const outroCups = document.querySelector(`.cups`);
 let outroCount = 1;
 
+const tm3gif = document.querySelector(`.trademark3-content-image-container`);
+
 
 const init = () => {
   setupLogs();
   setupListeners();
-  setupIntroductionTimer();
   setupOutroTimer();
   setupReactElements();
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 1150) {
@@ -41,11 +40,7 @@ const setupLogs = () => {
 const setupListeners = () => {
   window.addEventListener(`scroll`, scrollCorner);
   window.addEventListener(`scroll`, tm2scrollEffect);
-};
-
-const setupIntroductionTimer = () => {
-  const interval = 1000; //miliseconden
-  setInterval(changeImage, interval);
+  window.addEventListener(`scroll`, tm3scrollEffect);
 };
 
 const setupOutroTimer = () => {
@@ -56,6 +51,8 @@ const setupOutroTimer = () => {
 
 const setupReactElements = () => {
   //ReactDOM.render(<Test />, document.getElementById(`reactcontent`));
+  ReactDOM.render(<Element1 />, document.getElementById(`reactcontent`));
+  ReactDOM.render(<Element2 />, document.getElementById(`reactcontent2`));
 };
 
 const countOutro = () => {
@@ -68,10 +65,20 @@ const countOutro = () => {
   outroCount ++;
 };
 
+const tm3scrollEffect = () => {
+  const scroll = window.scrollY;
+  if (scroll >= 5000 && scroll < 5400) {
+    tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_1.gif)`;
+  } else if (scroll >= 5400 && scroll <= 6000) {
+    tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_2.gif)`;
+  } else if (scroll >= 6000) {
+    tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_3.gif)`;
+  }
+};
+
 const tm2scrollEffect = () => {
-  console.log(window.scrollY);
+  //console.log(window.scrollY);
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 960) {
-    console.log(`mobile`);
     tm2article1.classList.remove(`tm2-articleEffect`);
     tm2article2.classList.remove(`tm2-articleEffect`);
     tm2article3.classList.remove(`tm2-articleEffect`);
@@ -82,14 +89,14 @@ const tm2scrollEffect = () => {
   } else {
     const scroll = window.scrollY;
     tm2img1.classList.remove(`hide`);
-    if (scroll <= 3200) {
+    if (scroll >= 3000 && scroll < 3300) {
       tm2article1.classList.remove(`tm2-articleEffect`);
       tm2article2.classList.add(`tm2-articleEffect`);
       tm2article3.classList.add(`tm2-articleEffect`);
       tm2img2.classList.remove(`tm2-imgBGEffect`);
       tm2img3.classList.add(`tm2-imgBGEffect`);
       tm2img4.classList.add(`tm2-imgBGEffect`);
-    } else if (scroll <= 3300) {
+    } else if (scroll >= 3300 && scroll < 3500) {
       tm2article1.classList.add(`tm2-articleEffect`);
       tm2article2.classList.remove(`tm2-articleEffect`);
       tm2article3.classList.add(`tm2-articleEffect`);
@@ -112,7 +119,7 @@ const scrollCorner = () => {
   //console.log(window.scrollY);
   if (scroll <= 2800) {
     cornerImage.src = `/assets/img/corners/corner_1.png`;
-  } else if (scroll <= 4300) {
+  } else if (scroll <= 4350) {
     cornerImage.src = `/assets/img/corners/corner_2.png`;
   } else if (scroll <= 6900) {
     cornerImage.src = `/assets/img/corners/corner_3.png`;
@@ -122,26 +129,6 @@ const scrollCorner = () => {
     cornerImage.src = `/assets/img/corners/corner_4.png`;
   }
 
-};
-
-const changeImage = () => {
-  const imgPath = `assets/img/intro/`;
-  const oldImageCount = imageCount;
-  if (imageCount >= 5) {
-    imageCount = 0;
-  }
-  //console.log(`${oldImageCount} old`);
-  imageCount ++;
-  //console.log(`${imageCount} new`);
-  img.src = `${imgPath}${imageCount}.png`;
-
-  if (imageCount !== 0) {
-    document.querySelector(`.markering${imageCount}`).classList.add(`markering-intro`);
-    if (firstTime) {
-      document.querySelector(`.markering${oldImageCount}`).classList.remove(`markering-intro`);
-    }
-  }
-  firstTime = true;
 };
 
 

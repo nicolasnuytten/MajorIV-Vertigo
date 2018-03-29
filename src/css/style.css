@@ -26,10 +26,6 @@ main {
   width: 100%;
 }
 
-*, *:before, *:after { /* stylelint-disable-line */
-  box-sizing: inherit;
-}
-
 .hide {
   display: none;
 }
@@ -59,6 +55,7 @@ main {
 .markering {
   font-weight: bolder;
   font-style: italic;
+  padding: .3rem;
 }
 
 .yellow {
@@ -67,19 +64,50 @@ main {
 
 .orange {
   background-color: var(--orange);
+  color: white;
 }
 
 .red {
   background-color: var(--red);
+  color: white;
 }
 
 .purple {
   background-color: var(--purple);
+  color: white;
 }
 
 .tm-title {
   font-family: marker;
   font-size: 5rem;
+}
+
+.tmt {
+  background-repeat: no-repeat;
+  padding: 3rem 0;
+}
+
+.tm1t {
+  background-image: url(../assets/img/tm1/tm1t.png);
+  background-position: right top;
+  background-size: 8rem;
+}
+
+.tm2t {
+  background-image: url(../assets/img/tm2/tm2t.png);
+  background-position: center;
+}
+
+.tm3t {
+  background-image: url(../assets/img/tm3/tm3t.png);
+  background-position: right;
+  background-size: 9rem;
+  padding-right: 2rem;
+}
+
+.tm4t {
+  background-image: url(../assets/img/tm4/tm4t.png);
+  background-position: right;
 }
 
 .tm-subtitle {
@@ -116,14 +144,19 @@ main {
 }
 
 .header-video-container {
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: auto;
 
   & video {
+    width: inherit;
     background-color: #f6f1e8;
-    border: 1rem solid #f6f2e7;
-    border-radius: 3rem;
+    /* border-radius: 3rem; */
+    mix-blend-mode: multiply;
+    box-shadow: var(--box-shadow);
   }
 
   & .header-mobile {
@@ -131,8 +164,8 @@ main {
   }
 }
 
-
-.introduction, .introducion-container {
+.introduction,
+.introducion-container {
   height: 32rem;
   border-top: .7rem solid black;
   border-bottom: .7rem solid black;
@@ -145,19 +178,19 @@ main {
 }
 
 .introduction {
-  margin-top: 20rem;
+  margin-top: 10rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: skewY(-2deg);
-
 }
 
 .introduction-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .introduction-text-container {
@@ -178,9 +211,39 @@ main {
 }
 
 .introduction-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer {
+  position: absolute;
+  width: 43rem;
+  display: flex;
+  justify-content: space-between;
+
+  & div {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button2 {
 
   & img {
-    margin-top: -15rem;
+    transform: scaleX(-1);
+  }
+
+  & source {
+    transform: scaleX(-1);
   }
 }
 
@@ -232,7 +295,8 @@ main {
     margin-bottom: 3.5rem;
   }
 
-  & .trademark1-article1-container, .trademark1-article2-container {
+  & .trademark1-article1-container,
+  .trademark1-article2-container {
     width: 55rem;
   }
 
@@ -402,19 +466,23 @@ main {
   & p {
     margin-bottom: 4rem;
   }
+}
 
-  & .trademark3-content-image-container {
-    height: 190rem;
-
-  }
+.trademark3-content-image-container {
+  width: 50vw;
+  height: 150rem;
+  background-image: url(/assets/img/tm3/tm3_1.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 .trademark3-quote-image-container {
-  margin-top: -45rem;
   z-index: 30;
 
   & img {
-    width: 100%;
+    width: 100vw;
+    height: auto;
   }
 }
 
@@ -431,7 +499,7 @@ main {
   & p {
     background-image: url(/assets/img/bg/tm4bg.png);
     background-repeat: no-repeat;
-    background-size: 29rem;
+    background-size: 30rem;
   }
 
   & h2 {
@@ -441,6 +509,47 @@ main {
 
 .trademark4-content-container {
   margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .tm4-image {
+    width: 30vw;
+    border: .5rem solid var(--purple);
+  }
+
+  & .tm4-colorblind {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vw;
+
+    & .tm4-button {
+      background-color: var(--purple);
+      border: none;
+      width: 15rem;
+      margin: 0 auto;
+      padding: 1rem;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: -.2rem;
+      outline: none;
+      cursor: pointer;
+
+      &:active {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+.filter {
+  filter: hue-rotate(50deg);
+  filter: 
 }
 
 .tm4-article1 {
@@ -450,8 +559,81 @@ main {
   }
 }
 
+.footer-colors {
+  margin-top: 4rem;
+
+  & div {
+    height: 3rem;
+    width: 100vw;
+  }
+
+  & .shadow {
+    box-shadow: var(--box-shadow);
+  }
+}
+
 footer {
-  margin-bottom: 50rem;
+  width: 100vw;
+  background-image: url(/assets/img/bg/WornPattern.jpg);
+  background-blend-mode: luminosity;
+  background-repeat: repeat;
+  background-size: 15rem;
+  background-color: white;
+
+  & .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .trivia {
+    font-family: marker;
+    margin: 5rem auto;
+    text-align: center;
+    width: 80vw;
+  }
+
+  & .footer-content-container {
+    margin: 0 auto 10rem;
+    padding: 1rem;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .footer-logo {
+    width: 10rem;
+    height: auto;
+  }
+
+  & .footer-image {
+    width: 25vw;
+    height: auto;
+  }
+
+  & .text {
+    font-family: arial;
+    margin: 2rem 0;
+    width: 40vw;
+  }
+
+  & a {
+    background-color: var(--purple);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -.2rem;
+    color: white;
+    text-decoration: none;
+    width: 12rem;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -467,15 +649,6 @@ footer {
   .paragraph {
     font-size: 1.4rem;
     width: 40rem;
-  }
-
-  .introduction-image-container {
-
-    & img {
-      width: 50vw;
-      height: auto;
-      margin-left: -50rem;
-    }
   }
 }
 
@@ -494,7 +667,7 @@ footer {
   }
 
   .header-video-container {
-    width: 80vw;
+    width: 100vw;
     height: auto;
 
     & video {
@@ -503,21 +676,25 @@ footer {
 
     & .header-mobile {
       display: block;
-      width: 80vw;
+      width: 100vw;
       height: auto;
+      box-shadow: var(--box-shadow);
+      border-bottom: .7rem solid black;
     }
   }
 
   .introduction {
     height: 100%;
-    margin-top: 4rem;
+    margin-top: -7rem;
+    z-index: -10;
   }
 
   .introduction-container {
     flex-direction: column;
+    margin-top: 4rem;
 
     & img {
-      width: 100vw;
+      width: 50vw;
       height: auto;
       margin: 0;
     }
@@ -565,6 +742,7 @@ footer {
 
     & .trademark2-header-quote-container {
       margin-top: 4rem;
+      width: 80vw;
     }
   }
 
@@ -575,7 +753,6 @@ footer {
   }
 
   .trademark2-content-image-container {
-
     display: none;
 
     & img {
@@ -594,7 +771,9 @@ footer {
     }
   }
 
-  .tm2-article1, .tm2-article2, .tm2-article3 {
+  .tm2-article1,
+  .tm2-article2,
+  .tm2-article3 {
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -612,7 +791,53 @@ footer {
     justify-content: center;
   }
 
-  .trademark1-quote-image-container, .trademark3-quote-image-container {
+  .trademark1-quote-image-container,
+  .trademark3-quote-image-container {
     display: none;
+  }
+
+  .trademark4-header-container {
+    flex-direction: column;
+
+    & .trademark4-header-quote-container {
+      margin-top: 4rem;
+      width: 80vw;
+    }
+  }
+
+  footer {
+
+    & .trivia {
+      width: 80vw;
+      line-height: 1.5;
+    }
+
+    & .text {
+      width: 45vw;
+      line-height: 1.5;
+      margin: 3rem 0;
+    }
+  }
+
+  .trademark4-content-container {
+    display: flex;
+    flex-direction: column;
+
+    & .tm4-colorblind {
+      height: 50vw;
+      margin-top: 2rem;
+    }
+
+    & .tm4-image {
+      width: 70vw;
+    }
+  }
+
+  .buttonContainer {
+    width: 80vw;
+
+    & img {
+      width: 15vw;
+    }
   }
 }
