@@ -508,6 +508,15 @@ footer {
   & .footer-content-container {
     margin: 0 auto 10rem;
     padding: 1rem;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  & .footer-image {
+    width: 20vw;
+    height: auto;
   }
 
   & .text {
@@ -718,7 +727,9 @@ footer {
     }
 
     & .text {
-      width: 80vw;
+      width: 45vw;
+      line-height: 1.5;
+      margin: 3rem 0;
     }
   }
 }
