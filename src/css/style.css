@@ -174,7 +174,7 @@ main {
 }
 
 .introduction {
-  margin-top: 20rem;
+  margin-top: 10rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -186,6 +186,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .introduction-text-container {
@@ -206,9 +207,39 @@ main {
 }
 
 .introduction-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer {
+  position: absolute;
+  width: 43rem;
+  display: flex;
+  justify-content: space-between;
+
+  & div {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button2 {
 
   & img {
-    margin-top: -15rem;
+    transform: scaleX(-1);
+  }
+
+  & source {
+    transform: scaleX(-1);
   }
 }
 
@@ -558,15 +589,6 @@ footer {
     font-size: 1.4rem;
     width: 40rem;
   }
-
-  .introduction-image-container {
-
-    & img {
-      width: 50vw;
-      height: auto;
-      margin-left: -50rem;
-    }
-  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -596,16 +618,19 @@ footer {
       width: 100vw;
       height: auto;
       box-shadow: var(--box-shadow);
+      border-bottom: .7rem solid black;
     }
   }
 
   .introduction {
     height: 100%;
-    margin-top: 4rem;
+    margin-top: -7rem;
+    z-index: -10;
   }
 
   .introduction-container {
     flex-direction: column;
+    margin-top: 4rem;
 
     & img {
       width: 50vw;
