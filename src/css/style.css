@@ -78,6 +78,34 @@ main {
   font-size: 5rem;
 }
 
+.tmt {
+  background-repeat: no-repeat;
+  padding: 3rem 0;
+}
+
+.tm1t {
+  background-image: url(../assets/img/tm1/tm1t.png);
+  background-position: right top;
+  background-size: 8rem;
+}
+
+.tm2t {
+  background-image: url(../assets/img/tm2/tm2t.png);
+  background-position: center;
+}
+
+.tm3t {
+  background-image: url(../assets/img/tm3/tm3t.png);
+  background-position: right;
+  background-size: 9rem;
+  padding-right: 2rem;
+}
+
+.tm4t {
+  background-image: url(../assets/img/tm4/tm4t.png);
+  background-position: right;
+}
+
 .tm-subtitle {
   color: white;
   font-size: 3.4rem;
@@ -136,7 +164,7 @@ main {
 .introducion-container {
   height: 32rem;
   border-top: .7rem solid black;
-  border-bottom: .7rem solid black;
+  border-bottom: x.7rem solid black;
   background-image: url(/assets/img/bg/WornPattern.jpg);
   background-blend-mode: luminosity;
   background-repeat: repeat;
@@ -434,7 +462,7 @@ main {
   & p {
     background-image: url(/assets/img/bg/tm4bg.png);
     background-repeat: no-repeat;
-    background-size: 29rem;
+    background-size: 30rem;
   }
 
   & h2 {
