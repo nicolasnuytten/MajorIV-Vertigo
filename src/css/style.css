@@ -678,6 +678,10 @@ footer {
 
 @media only screen and (max-width: 960px) {
 
+  .tm-title {
+    font-size: 7vw;
+  }
+
   .center {
     width: 80vw;
   }
@@ -752,6 +756,11 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 0;
+
+    & .title {
+      font-size: 3rem;
+      width: 90vw;
+    }
   }
 
   .trademark1-article1-container {
@@ -825,11 +834,17 @@ footer {
   .tm2-article1,
   .tm2-article2,
   .tm2-article3 {
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    & .title {
+      width: 90vw;
+      text-align: left;
+      font-size: 3rem;
+    }
 
     & p {
       margin-bottom: 2rem;
@@ -840,6 +855,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    & .title {
+      font-size: 3rem;
+    }
   }
 
   .trademark3-content-image-container {
@@ -876,6 +895,10 @@ footer {
   .trademark4-content-container {
     display: flex;
     flex-direction: column;
+    
+    & .title {
+      font-size: 3rem;
+    }
 
     & .tm4-colorblind {
       height: 100%;
