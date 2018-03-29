@@ -55,6 +55,7 @@ main {
 .markering {
   font-weight: bolder;
   font-style: italic;
+  padding: .3rem;
 }
 
 .yellow {
@@ -63,14 +64,17 @@ main {
 
 .orange {
   background-color: var(--orange);
+  color: white;
 }
 
 .red {
   background-color: var(--red);
+  color: white;
 }
 
 .purple {
   background-color: var(--purple);
+  color: white;
 }
 
 .tm-title {
@@ -523,7 +527,7 @@ main {
   }
 
   & .shadow {
-    box-shadow: 0 .3rem 5.9rem 0px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--box-shadow);
   }
 }
 

@@ -65,7 +65,6 @@ const countOutro = () => {
 
 const tm3scrollEffect = () => {
   const scroll = window.scrollY;
-  console.log(tm3gif.style.backgroundImage);
   if (scroll >= 5000 && scroll < 5400) {
     tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_1.gif)`;
   } else if (scroll >= 5400 && scroll <= 6000) {
@@ -76,9 +75,8 @@ const tm3scrollEffect = () => {
 };
 
 const tm2scrollEffect = () => {
-  console.log(window.scrollY);
+  //console.log(window.scrollY);
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 960) {
-    console.log(`mobile`);
     tm2article1.classList.remove(`tm2-articleEffect`);
     tm2article2.classList.remove(`tm2-articleEffect`);
     tm2article3.classList.remove(`tm2-articleEffect`);
@@ -119,7 +117,7 @@ const scrollCorner = () => {
   //console.log(window.scrollY);
   if (scroll <= 2800) {
     cornerImage.src = `/assets/img/corners/corner_1.png`;
-  } else if (scroll <= 4300) {
+  } else if (scroll <= 4350) {
     cornerImage.src = `/assets/img/corners/corner_2.png`;
   } else if (scroll <= 6900) {
     cornerImage.src = `/assets/img/corners/corner_3.png`;
