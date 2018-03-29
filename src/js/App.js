@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom';
 import Test from './Components/Test.jsx';  // eslint-disable-line
 import Element1 from './Components/Element1.jsx';  // eslint-disable-line
 
-const img = document.querySelector(`.intro-image`);
-const imgWebp = document.querySelector(`.intro-webp`);
-let imageCount = 0;
-let firstTime = false;
-
 const cornerImage = document.querySelector(`.corner-image`);
 
 const tm2article1 = document.querySelector(`.tm2-article1`);
@@ -26,7 +21,6 @@ let outroCount = 1;
 const init = () => {
   setupLogs();
   setupListeners();
-  setupIntroductionTimer();
   setupOutroTimer();
   setupReactElements();
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 1150) {
@@ -43,11 +37,6 @@ const setupLogs = () => {
 const setupListeners = () => {
   window.addEventListener(`scroll`, scrollCorner);
   window.addEventListener(`scroll`, tm2scrollEffect);
-};
-
-const setupIntroductionTimer = () => {
-  //const interval = 1000; //miliseconden
-  //setInterval(changeImage, interval);
 };
 
 const setupOutroTimer = () => {
@@ -125,27 +114,6 @@ const scrollCorner = () => {
     cornerImage.src = `/assets/img/corners/corner_4.png`;
   }
 
-};
-
-const changeImage = () => {
-  const imgPath = `assets/img/intro/`;
-  const oldImageCount = imageCount;
-  if (imageCount >= 5) {
-    imageCount = 0;
-  }
-  //console.log(`${oldImageCount} old`);
-  imageCount ++;
-  //console.log(`${imageCount} new`);
-  img.src = `${imgPath}${imageCount}.png`;
-  imgWebp.srcset = `${imgPath}${imageCount}.webp`;
-
-  if (imageCount !== 0) {
-    document.querySelector(`.markering${imageCount}`).classList.add(`markering-intro`);
-    if (firstTime) {
-      document.querySelector(`.markering${oldImageCount}`).classList.remove(`markering-intro`);
-    }
-  }
-  firstTime = true;
 };
 
 

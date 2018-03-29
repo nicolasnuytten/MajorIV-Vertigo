@@ -14,7 +14,6 @@ const HandleLeftClick = () => {
   }
   const introImage = document.querySelector(`.intro-image`);
   const introImageWebp = document.querySelector(`.intro-webp`);
-  console.log(introImage);
   introImage.src = `${imgPath}/${imageCount}.png`;
   introImageWebp.srcset = `${imgPath}/${imageCount}.webp`;
   checkMarking(oldImageCount);
@@ -35,8 +34,6 @@ const HandleRightClick = () => {
   checkMarking(oldImageCount);
 };
 const checkMarking = oldImageCount => {
-  console.log(oldImageCount);
-
   if (imageCount === 1) {
     document.querySelector(`.markering5`).classList.remove(`markering-intro`);
   } else if (imageCount === 5) {
@@ -70,13 +67,20 @@ const Element1 = () => {
       <div className='introduction-image-container'>
         <picture>
           <source className='intro-webp' type='image/webp' srcSet='/assets/img/intro/default.webp' />
-          <img className='intro-image' src='/assets/img/intro/default.png' width='550' height='550' alt='Chrisopher Nolan' />
+          <img className='intro-image' src='/assets/img/intro/default.png' width='400' height='400' alt='Chrisopher Nolan' />
         </picture>
+        <div className='buttonContainer'>
+          <picture className='button1' onClick={HandleLeftClick}>
+            <source  type='image/webp' srcSet='/assets/img/arrow.webp' />
+            <img src='/assets/img/arrow.png' width='74' height='42' alt='Arrow' />
+          </picture>
+          <picture className='button2' onClick={HandleRightClick}>
+            <source  type='image/webp' srcSet='/assets/img/arrow.webp' />
+            <img src='/assets/img/arrow.png' width='74' height='42' alt='Arrow' />
+          </picture>
+        </div>
       </div>
-      <div className='buttonContainer'>
-        <div className='button1' onClick={HandleLeftClick}></div>
-        <div className='button2' onClick={HandleRightClick}></div>
-      </div>
+
     </article>
   );
 };
