@@ -2,34 +2,56 @@ import React from 'react'; // eslint-disable-line
 
 let imageCount = 1;
 const imgPath = `assets/img/intro/`;
+let oldImageCount;
+let firstTime = false;
 
 const HandleLeftClick = () => {
   if (imageCount <= 1) {
     imageCount = 5;
   } else {
+    oldImageCount = imageCount;
     imageCount --;
   }
-  console.log(imageCount);
   const introImage = document.querySelector(`.intro-image`);
   const introImageWebp = document.querySelector(`.intro-webp`);
   console.log(introImage);
   introImage.src = `${imgPath}/${imageCount}.png`;
   introImageWebp.srcset = `${imgPath}/${imageCount}.webp`;
+  checkMarking(oldImageCount);
 };
 
 const HandleRightClick = () => {
   if (imageCount >= 5) {
     imageCount = 1;
   } else {
+    oldImageCount = imageCount;
     imageCount ++;
   }
-  console.log(imageCount);
   const introImage = document.querySelector(`.intro-image`);
   const introImageWebp = document.querySelector(`.intro-webp`);
   console.log(introImage);
   introImage.src = `${imgPath}/${imageCount}.png`;
   introImageWebp.srcset = `${imgPath}/${imageCount}.webp`;
+  checkMarking(oldImageCount);
 };
+const checkMarking = oldImageCount => {
+  console.log(oldImageCount);
+
+  if (imageCount === 1) {
+    document.querySelector(`.markering5`).classList.remove(`markering-intro`);
+  } else if (imageCount === 5) {
+    document.querySelector(`.markering1`).classList.remove(`markering-intro`);
+  }
+
+  if (imageCount !== 0) {
+    document.querySelector(`.markering${imageCount}`).classList.add(`markering-intro`);
+    if (firstTime) {
+      document.querySelector(`.markering${oldImageCount}`).classList.remove(`markering-intro`);
+    }
+    firstTime = true;
+  }
+};
+
 
 const Element1 = () => {
   return (
