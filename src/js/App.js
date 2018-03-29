@@ -46,8 +46,8 @@ const setupListeners = () => {
 };
 
 const setupIntroductionTimer = () => {
-  const interval = 1000; //miliseconden
-  setInterval(changeImage, interval);
+  //const interval = 1000; //miliseconden
+  //setInterval(changeImage, interval);
 };
 
 const setupOutroTimer = () => {
