@@ -59,7 +59,8 @@ const Element1 = () => {
             bekend van films als
         <span className='markering5'> The Prestige</span>,
         <span className='markering3'>Inception</span>,
-        <span className='markering4'>Interstellar</span>,
+        <span className='markering4'>Interstellar </span>,
+
         <span className='markering2'>Dunkirk</span> en de succesvolle
         <span className='markering1'> Batman-reboots Batman Begins, The Dark Knight en The Dark Knight Rises</span>. Leer Christopher Nolan via een
             ander perspectief kennen, wat maakt hem juist uniek en waarom zijn zijn films anders.</p>
