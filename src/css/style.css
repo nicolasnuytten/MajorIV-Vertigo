@@ -112,14 +112,18 @@ main {
 }
 
 .header-video-container {
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 
   & video {
+    width: inherit;
     background-color: #f6f1e8;
-    border: 1rem solid #f6f2e7;
-    border-radius: 3rem;
+    /* border-radius: 3rem; */
+    mix-blend-mode: multiply;
+    box-shadow: var(--box-shadow);
   }
 
   & .header-mobile {
@@ -542,7 +546,7 @@ footer {
   }
 
   .header-video-container {
-    width: 80vw;
+    width: 100vw;
     height: auto;
 
     & video {
@@ -551,7 +555,7 @@ footer {
 
     & .header-mobile {
       display: block;
-      width: 80vw;
+      width: 100vw;
       height: auto;
     }
   }
