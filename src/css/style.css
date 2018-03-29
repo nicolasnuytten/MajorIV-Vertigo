@@ -699,7 +699,7 @@ footer {
 
     & img {
       width: 5vw;
-      margin: 9evw 12vw;
+      margin: 9vw 12vw;
       z-index: 101;
     }
   }
@@ -921,7 +921,7 @@ footer {
   .trademark4-content-container {
     display: flex;
     flex-direction: column;
-    
+
     & .title {
       font-size: 3rem;
     }
