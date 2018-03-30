@@ -38,7 +38,7 @@ const commonConfig = merge([
           }
         },
         {
-          test: /\.(jpe?g|png|gif|webp|svg)$/,
+          test: /\.(jpe?g|png|gif|webp|svg|mp4)$/,
           use:[
             {
               loader: `file-loader`,
@@ -122,7 +122,8 @@ const developmentConfig = merge([
   {
     devServer: {
       overlay: true,
-      contentBase: PATHS.src
+      contentBase: PATHS.src,
+      host: '0.0.0.0'
     }
   },
   parts.loadCSS(),
