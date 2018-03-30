@@ -111,14 +111,14 @@ const tm2scrollEffect = () => {
       tm2img2.classList.remove(`tm2-imgBGEffect`);
       tm2img3.classList.add(`tm2-imgBGEffect`);
       tm2img4.classList.add(`tm2-imgBGEffect`);
-    } else if (scroll >= 3300 && scroll < 3500) {
+    } else if (scroll >= 3300 && scroll < 3700) {
       tm2article1.classList.add(`tm2-articleEffect`);
       tm2article2.classList.remove(`tm2-articleEffect`);
       tm2article3.classList.add(`tm2-articleEffect`);
       tm2img2.classList.add(`tm2-imgBGEffect`);
       tm2img3.classList.remove(`tm2-imgBGEffect`);
       tm2img4.classList.add(`tm2-imgBGEffect`);
-    } else if (scroll >= 3500) {
+    } else if (scroll >= 3700) {
       tm2article1.classList.add(`tm2-articleEffect`);
       tm2article2.classList.add(`tm2-articleEffect`);
       tm2article3.classList.remove(`tm2-articleEffect`);
