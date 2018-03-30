@@ -28,7 +28,7 @@ const init = () => {
   setupOutroTimer();
   setupReactElements();
   setupMobilePopupBox();
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 1150) {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 960) {
     cornerImage.classList.add(`hide`);
   }
 };
@@ -85,14 +85,15 @@ const countOutro = () => {
 
 const tm3scrollEffect = () => {
   console.log(window.innerWidth);
-  if (window.innerWidth < 960) {
+  if (window.innerWidth >= 960) {
     const scroll = window.scrollY;
+    tm3gif.style.display = `block`;
     if (scroll >= 4886 && scroll < 5400) {
-      tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_1.gif)`;
+      tm3gif.style.backgroundImage = `url(assets/img/tm3/tm3_1.gif)`;
     } else if (scroll >= 5400 && scroll <= 5800) {
-      tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_2.gif)`;
+      tm3gif.style.backgroundImage = `url(assets/img/tm3/tm3_2.gif)`;
     } else if (scroll > 5800) {
-      tm3gif.style.backgroundImage = `url(/assets/img/tm3/tm3_3.gif)`;
+      tm3gif.style.backgroundImage = `url(assets/img/tm3/tm3_3.gif)`;
     }
   } else {
     tm3gif.style.display = `none`;
@@ -141,23 +142,22 @@ const scrollCorner = () => {
   const scroll = window.scrollY;
   //console.log(window.scrollY);
   if (scroll <= 2800) {
-    cornerImage.src = `/assets/img/corners/corner_1.png`;
+    cornerImage.src = `assets/img/corners/corner_1.png`;
     scrollTop.style.backgroundColor = `#f2ca4c`;
   } else if (scroll <= 4350) {
-    cornerImage.src = `/assets/img/corners/corner_2.png`;
+    cornerImage.src = `assets/img/corners/corner_2.png`;
     scrollTop.style.backgroundColor = `#f95c10`;
   } else if (scroll <= 6900) {
-    cornerImage.src = `/assets/img/corners/corner_3.png`;
+    cornerImage.src = `assets/img/corners/corner_3.png`;
     scrollTop.style.backgroundColor = `#d6242f`;
   } else if (scroll <= 7100) {
-    cornerImage.src = `/assets/img/corners/corner_4.png`;
+    cornerImage.src = `assets/img/corners/corner_4.png`;
     scrollTop.style.backgroundColor = `#9a183c`;
   } else {
-    cornerImage.src = `/assets/img/corners/corner_4.png`;
+    cornerImage.src = `assets/img/corners/corner_4.png`;
     scrollTop.style.backgroundColor = `#9a183c`;
   }
 
 };
-
 
 init();

@@ -67,18 +67,18 @@ const Element1 = () => {
       </div>
       <div className='introduction-image-container'>
         <picture>
-          <source className='intro-webp' type='image/webp' srcSet='/assets/img/intro/default.webp' />
-          <img className='intro-image' src='/assets/img/intro/default.png' width='400' height='400' alt='Chrisopher Nolan' />
+          <source className='intro-webp' type='image/webp' srcSet='assets/img/intro/default.webp' />
+          <img className='intro-image' src='assets/img/intro/default.png' width='400' height='400' alt='Chrisopher Nolan' />
         </picture>
         <div className='buttonContainer'>
-          <picture className='button1' onClick={HandleLeftClick}>
-            <source  type='image/webp' srcSet='/assets/img/arrow.webp' />
-            <img src='/assets/img/arrow.png' width='74' height='42' alt='Arrow' />
-          </picture>
-          <picture className='button2' onClick={HandleRightClick}>
-            <source  type='image/webp' srcSet='/assets/img/arrow.webp' />
-            <img src='/assets/img/arrow.png' width='74' height='42' alt='Arrow' />
-          </picture>
+          <a onClick={HandleLeftClick}><picture className='button1'>
+            <source  type='image/webp' srcSet='assets/img/arrow.webp' />
+            <img src='assets/img/arrow.png' width='74' height='42' alt='Arrow' />
+          </picture></a>
+          <a onClick={HandleRightClick}><picture className='button2'>
+            <source  type='image/webp' srcSet='assets/img/arrow.webp' />
+            <img src='assets/img/arrow.png' width='74' height='42' alt='Arrow' />
+          </picture></a>
         </div>
       </div>
 
