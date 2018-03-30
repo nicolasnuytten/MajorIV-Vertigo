@@ -148,6 +148,10 @@ main {
   z-index: 5;
 }
 
+.scroll-top {
+  display: none;
+}
+
 .header-video-container {
   margin-bottom: 3rem;
   display: flex;
@@ -678,6 +682,28 @@ footer {
 
 @media only screen and (max-width: 960px) {
 
+  .scroll-top-container {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: var(--yellow);
+    width: 20vw;
+    height: 20vw;
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -.3rem;
+  }
+
+  .scroll-top {
+    display: block;
+
+    & img {
+      width: 5vw;
+      margin: 9vw 12vw;
+      z-index: 101;
+    }
+  }
+
   .tm-title {
     font-size: 7vw;
   }
@@ -895,7 +921,7 @@ footer {
   .trademark4-content-container {
     display: flex;
     flex-direction: column;
-    
+
     & .title {
       font-size: 3rem;
     }
