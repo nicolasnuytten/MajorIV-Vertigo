@@ -23,7 +23,6 @@ const scrollTop = document.querySelector(`.scroll-top-container`);
 
 
 const init = () => {
-  setupLogs();
   setupListeners();
   setupOutroTimer();
   setupReactElements();
@@ -38,7 +37,6 @@ const setupMobilePopupBox = () => {
 };
 
 const mobilePopup = () => {
-  console.log(`geladen`);
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     const r = confirm(`C. Nolan heeft het echt niet voor telefoons, wil je toch doorgaan op de mobile site?`);
     if (r === true) {
@@ -47,12 +45,6 @@ const mobilePopup = () => {
       window.location.href = `http://www.landliners.com/`;
     }
   }
-};
-
-
-const setupLogs = () => {
-  // console.log(`hello world`);
-  // console.log(`hallo`);
 };
 
 const setupListeners = () => {
@@ -64,7 +56,6 @@ const setupListeners = () => {
 };
 
 const setupOutroTimer = () => {
-  // console.log(outroCount);
   const interval = 20000; //miliseconden
   setInterval(countOutro, interval);
 };
@@ -86,7 +77,6 @@ const countOutro = () => {
 };
 
 const tm3scrollEffect = () => {
-  // console.log(window.innerWidth);
   if (window.innerWidth >= 960) {
     const scroll = window.scrollY;
     tm3gif.style.display = `block`;
@@ -103,7 +93,6 @@ const tm3scrollEffect = () => {
 };
 
 const tm2scrollEffect = () => {
-  //console.log(window.scrollY);
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 960) {
     tm2article1.classList.remove(`tm2-articleEffect`);
     tm2article2.classList.remove(`tm2-articleEffect`);
@@ -142,7 +131,6 @@ const tm2scrollEffect = () => {
 
 const scrollCorner = () => {
   const scroll = window.scrollY;
-  //console.log(window.scrollY);
   if (scroll <= 2800) {
     cornerImage.src = `assets/img/corners/corner_1.png`;
   } else if (scroll <= 4350) {
@@ -159,7 +147,6 @@ const scrollCorner = () => {
 
 const scrollTopEffect = () => {
   const scroll = window.scrollY;
-  console.log(scroll);
   if (scroll <= 1220) {
     scrollTop.style.display = `none`;
   } else if (scroll > 1220 && scroll <= 2800) {
