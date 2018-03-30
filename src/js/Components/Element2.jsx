@@ -17,7 +17,10 @@ const handleToggleImageFilter = () => {
 
 const Element2 = () => {
   return <div className='tm4-colorblind'>
-    <img className='tm4-image' src='assets/img/tm4/thejoker.jpg' alt='Christopher Nolan kleurenblind' />
+    <picture className='button2'>
+      <source  type='image/webp' srcSet='assets/img/tm4/thejoker.webp' />
+      <img className='tm4-image' src='assets/img/tm4/thejoker.jpg' alt='Christopher Nolan kleurenblind' />
+    </picture>
     <button className='tm4-button' onClick={handleToggleImageFilter}>Toggle  on</button>
   </div>;
 };

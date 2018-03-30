@@ -160,5 +160,4 @@ const scrollCorner = () => {
 
 };
 
-
 init();

@@ -724,6 +724,7 @@ footer {
   .header-video-container {
     width: 100vw;
     height: auto;
+    z-index: 10;
 
     & video {
       display: none;
@@ -740,8 +741,7 @@ footer {
 
   .introduction {
     height: 100%;
-    margin-top: -7rem;
-    z-index: -10;
+    margin-top: -5rem;
   }
 
   .introduction-container {

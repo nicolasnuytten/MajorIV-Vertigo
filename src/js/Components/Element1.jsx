@@ -71,14 +71,14 @@ const Element1 = () => {
           <img className='intro-image' src='assets/img/intro/default.png' width='400' height='400' alt='Chrisopher Nolan' />
         </picture>
         <div className='buttonContainer'>
-          <picture className='button1' onClick={HandleLeftClick}>
+          <a onClick={HandleLeftClick}><picture className='button1'>
             <source  type='image/webp' srcSet='assets/img/arrow.webp' />
             <img src='assets/img/arrow.png' width='74' height='42' alt='Arrow' />
-          </picture>
-          <picture className='button2' onClick={HandleRightClick}>
+          </picture></a>
+          <a onClick={HandleRightClick}><picture className='button2'>
             <source  type='image/webp' srcSet='assets/img/arrow.webp' />
             <img src='assets/img/arrow.png' width='74' height='42' alt='Arrow' />
-          </picture>
+          </picture></a>
         </div>
       </div>
 
