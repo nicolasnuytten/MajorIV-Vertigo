@@ -51,19 +51,21 @@ const mobilePopup = () => {
 
 
 const setupLogs = () => {
-  console.log(`hello world`);
-  console.log(`hallo`);
+  // console.log(`hello world`);
+  // console.log(`hallo`);
 };
 
 const setupListeners = () => {
   window.addEventListener(`scroll`, scrollCorner);
+  window.addEventListener(`scroll`, scrollTopEffect);
   window.addEventListener(`scroll`, tm2scrollEffect);
   window.addEventListener(`scroll`, tm3scrollEffect);
+
 };
 
 const setupOutroTimer = () => {
-  console.log(outroCount);
-  const interval = 10000; //miliseconden
+  // console.log(outroCount);
+  const interval = 20000; //miliseconden
   setInterval(countOutro, interval);
 };
 
@@ -84,7 +86,7 @@ const countOutro = () => {
 };
 
 const tm3scrollEffect = () => {
-  console.log(window.innerWidth);
+  // console.log(window.innerWidth);
   if (window.innerWidth >= 960) {
     const scroll = window.scrollY;
     tm3gif.style.display = `block`;
@@ -143,21 +145,33 @@ const scrollCorner = () => {
   //console.log(window.scrollY);
   if (scroll <= 2800) {
     cornerImage.src = `assets/img/corners/corner_1.png`;
-    scrollTop.style.backgroundColor = `#f2ca4c`;
   } else if (scroll <= 4350) {
     cornerImage.src = `assets/img/corners/corner_2.png`;
-    scrollTop.style.backgroundColor = `#f95c10`;
   } else if (scroll <= 6900) {
     cornerImage.src = `assets/img/corners/corner_3.png`;
-    scrollTop.style.backgroundColor = `#d6242f`;
   } else if (scroll <= 7100) {
     cornerImage.src = `assets/img/corners/corner_4.png`;
-    scrollTop.style.backgroundColor = `#9a183c`;
   } else {
     cornerImage.src = `assets/img/corners/corner_4.png`;
+  }
+};
+
+
+const scrollTopEffect = () => {
+  const scroll = window.scrollY;
+  console.log(scroll);
+  if (scroll <= 1220) {
+    scrollTop.style.display = `none`;
+  } else if (scroll > 1220 && scroll <= 2800) {
+    scrollTop.style.display = `block`;
+    scrollTop.style.backgroundColor = `#f2ca4c`;
+  } else if (scroll >= 3200 && scroll < 5660) {
+    scrollTop.style.backgroundColor = `#f95c10`;
+  } else if (scroll >= 5660 && scroll < 9650) {
+    scrollTop.style.backgroundColor = `#d6242f`;
+  } else if (scroll >= 9650) {
     scrollTop.style.backgroundColor = `#9a183c`;
   }
-
 };
 
 init();
