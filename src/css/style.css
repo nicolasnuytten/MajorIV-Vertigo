@@ -19,6 +19,10 @@ body {
   z-index: -10;
 }
 
+*, *:before, *:after { /* stylelint-disable-line */
+  box-sizing: inherit;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -693,6 +697,7 @@ footer {
     bottom: 0;
     right: 0;
     margin-bottom: -.3rem;
+    display: none;
   }
 
   .scroll-top {
