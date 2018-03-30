@@ -1,7 +1,5 @@
 import React from 'react'; // eslint-disable-line
 
-
-
 const handleToggleImageFilter = () => {
   const button = document.querySelector(`.tm4-button`);
   const image = document.querySelector(`.tm4-image`);
