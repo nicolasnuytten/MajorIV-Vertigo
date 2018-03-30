@@ -81,7 +81,6 @@ const Element1 = () => {
           </picture></a>
         </div>
       </div>
-
     </article>
   );
 };
